@@ -10,8 +10,10 @@
 -->
 
 ul {
+	item-align:center;
   list-style-type: none;
-  margin: 0;
+  width:auto;
+  margin: auto;
   padding: 0;
   overflow: hidden;
   background-color: #333;
@@ -26,10 +28,24 @@ li a {
   color: white;
   text-align: center;
   padding: 14px 16px;
+  width:auto;
+  font-family: 'Courier New', monospace;
+  margin:auto;
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
+
   background-color: #111;
+}
+h2{
+background: #00008B;
+font-family: 'Courier New', monospace;
+text-align:center;
+width:auto;
+font-size:50px;
+margin:center;
+height:100px;
+padding:20x 20x;
+color:#DAA520;
 }
