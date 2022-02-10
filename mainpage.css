@@ -10,13 +10,15 @@
 -->
 
 ul {
-	item-align:center;
+	
+item-align:center;
   list-style-type: none;
   width:auto;
   margin: auto;
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  position:relative;
 }
 
 li {
@@ -32,20 +34,31 @@ li a {
   font-family: 'Courier New', monospace;
   margin:auto;
   text-decoration: none;
+  font-weight: bold;
+  border:white;
 }
 
 li a:hover {
-
+border:white;
   background-color: #111;
 }
 h2{
-background: #00008B;
+background: #778899;
 font-family: 'Courier New', monospace;
 text-align:center;
 width:auto;
 font-size:50px;
-margin:center;
+margin:auto;
 height:100px;
 padding:20x 20x;
-color:#DAA520;
+color: white;
+font-weight: bold;
+}
+
+html { 
+  background: #778899 no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
