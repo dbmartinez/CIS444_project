@@ -43,7 +43,8 @@ border:white;
   background-color: #111;
 }
 h2{
-background: #778899;
+background:#778899;
+background-image: linear-gradient(#778899, #333);
 font-family: 'Courier New', monospace;
 text-align:center;
 width:auto;
