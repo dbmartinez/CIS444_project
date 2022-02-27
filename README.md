@@ -16,5 +16,3 @@ Other things to include:
   contact section,
   newsletter,
   Login section(Database)
-  
-  Beer List: Luffy Pale Ale, Nami Sweet & Sour Pilsner, Zoro Double IPA, Usopp Stout, Chopper Hopper IPA, Robin Ale, Sanji Pale Lager, Frank the Tank Porter, Koby Tripel
