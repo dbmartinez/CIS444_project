@@ -17,5 +17,5 @@ Needs to be done:
   food html page & css page,
   shop html page & css page,
   contact html page & css page,
-  newsletter(Database) SQL page
+  newsletter(Database) SQL page,
   Error Pages....
