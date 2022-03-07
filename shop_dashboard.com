@@ -15,5 +15,9 @@
   <li><a href="#shop">Shop</a></li>
   <li><a href="#contact">Contact</a></li>
 </ul>
+<h2>SHOP</h2>
+<form>
+    
+</form
 </body>
 </html>
