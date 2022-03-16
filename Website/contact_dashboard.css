@@ -1,5 +1,13 @@
-.tab{
+pre{
 	tab-size: 8;
+	color: #DAA520;
+}
+
+body {
+	background-color: black;
+}
+
+label {
 	color: #DAA520;
 }
 
@@ -50,11 +58,16 @@ h1 {
 	font-weight: bold;
 }
 
-p {
+p1 {
 	color: #DAA520;	
 }
 
-image {
+p {
+	color: #00b2ee;	
+}
+
+.image {
+	max-height: 100%;
 	max-width:100%;
 	height:auto;
 }
@@ -66,4 +79,11 @@ html {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+footer {
+	text-align: center;
+  	padding: 10px;
+  	background-color: black;
+  	color: white;
 }
