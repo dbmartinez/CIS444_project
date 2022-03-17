@@ -4,12 +4,13 @@
 <title>One Piece Brewery</title>
 <meta charset = "utf-8">
 <link rel="contact dashboard stylesheet" href="contact_dashboard.css">
+ <script src="contact_dashboard.js"> </script>
 
 </head>
   <body>
 
     <header >
-      <img class="image" src="Website Logo.jpeg" alt="Monkey D. Luffy" width="1115" height="400">
+      <img class="image" src="WebsiteLogo.jpeg" alt="Monkey D. Luffy" width="1115" height="400">
     </header>
 
     <ul>
@@ -17,6 +18,7 @@
       <li><a href="beer_dashboard.html">Beer</a></li>
       <li><a href="food_dashboard.html">Food</a></li>
       <li><a href="shop_dashboard.html">Shop</a></li>
+      <li><a href="about_dashboard.html">About Us</a></li>
     </ul>
 
     <h1>CONTACT US</h1>
@@ -24,8 +26,8 @@
       <p1>
         FIND US HERE
         <br>Address: 333 S Twin Oaks Valley Rd, 
-        </br>&emsp; &emsp; &emsp;San Marcos, CA 92096
-        <br>Phone:   760-867-5309</br>
+        &emsp; &emsp; &emsp;San Marcos, CA 92096
+        <br>Phone:   760-867-5309
             Hours of Operation:</p1>
         <pre class="tab">
             Sunday - Thursday: 11am-9pm
@@ -36,51 +38,51 @@
         <strong><br>SEND US A MESSAGE<br/></strong>
         IF YOU HAVE ANY QUESTIONS, 
         <br>OR WANT TO DISCUSS BUSINESS OPPORTUNITIES, 
-        </br>PLEASE LEAVE US A MESSAGE.
+        PLEASE LEAVE US A MESSAGE.
       </p>
       
       <label> 
         First Name:
-        <input type="text" style="width: 100px;" id="userFN" min = "0"/>
+        <input type="text" style="width: 100px;" id="userFN" onchange = "userInput()"/>
       </label>
 
       <label> 
-        <br></br>
+        <br>
         Last Name:
-        <input type="text" style="width: 100px;" id="userLN" min = "0"/>
+        <input type="text" style="width: 100px;" id="userLN" onchange = "userInput()"/>
       </label>
 
       <label> 
-        <br></br>
+        <br>
         Email:
-        <input type="text" style="width: 200px;" id="useremail" min = "0"/>
+        <input type="text" style="width: 200px;" id="useremail" onchange = "userInput()"/>
       </label>
 
       <label> 
-        <br></br>
+        <br>
         Subject:
-        <input type="text" style="width: 200px;" id="usersubject" min = "0"/>
+        <input type="text" style="width: 200px;" id="usersubject" onchange = "userInput()"/>
       </label>
 
       <label> 
-        <br></br>
+        <br>
         Message:
-        <br></br>
-        <input type="text" style="height: 100px;" id="usercomments" min = "0"/>
+        <br>
+        <input type="text" style="height: 100px;" id="usercomments" onchange = "userInput()"/>
       </label>
 
       <label>
-        <br></br>
+        <br>
         <input type="submit" id="submitButton"/>
       </label>
     
     </form>
 
     <footer>
-      <img class="image" src="Luffy Jolly Roger.jpeg" alt="Jolly Roger" align="left" width="150" height="150">
-      <img class="image" src="Luffy Jolly Roger.jpeg" alt="Jolly Roger" align="right" width="150" height="150">
+      <img class="image1" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
+      <img class="image2" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
 
-      <p style="text-align:center";><strong>One Piece Brewery</strong><br>
+      <p style="text-align:center"><strong>One Piece Brewery</strong><br>
       <a href="mailto:OnePieceBrewery@gmail.com">Email Us Here</a><br></p>
 
       <p>
@@ -96,7 +98,7 @@
         Friday & Saturday: 11am-11pm<br><br>
 
         Copyright ©2022 by One Piece Brewery - All Rights Reserved
-        <br>Powered by Awesomeness</br>
+        <br>Powered by Awesomeness
       </p>
 
     </footer>
