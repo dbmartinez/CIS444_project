@@ -7,6 +7,15 @@ body {
 	background-color: black;
 }
 
+p.gold {
+  text-align: center;
+  color: #DAA520;
+}
+
+p.lightblue {
+  color: #00b2ee;
+}
+
 label {
 	color: #DAA520;
 }
