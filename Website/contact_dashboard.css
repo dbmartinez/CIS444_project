@@ -53,7 +53,7 @@ h1 {
 	font-size:50px;
 	margin:auto;
 	height:100px;
-	padding:20x 20x;
+	padding:20px;
 	color: #DAA520;
 	font-weight: bold;
 }
@@ -85,5 +85,13 @@ footer {
 	text-align: center;
   	padding: 10px;
   	background-color: black;
-  	color: white;
+  	color: #00b2ee;
+}
+
+.image1 {
+  float: left;
+}
+
+.image2 {
+  float: right;
 }
