@@ -101,3 +101,11 @@ footer
   border-color: #DAA520;
   display: block;
 }
+
+.image1 {
+  float: left;
+}
+
+.image2 {
+  float: right;
+}
