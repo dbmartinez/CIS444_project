@@ -1,21 +1,23 @@
-<!-- CIS444
-	 mainpage.css
-	 Programmers:
-            Alejandro Quinones Gamboa
-            Brian Richey
-            Daniel B. Martinez
-            Dustin Tabar
-            Mohammed Ghadimzadeh
-            Robert Painter
--->
+/*
+  CIS444
+    mainpage.css
+    Programmers:
+              Alejandro Quinones Gamboa
+              Brian Richey
+              Daniel B. Martinez
+              Dustin Tabar
+              Mohammed Ghadimzadeh
+              Robert Painter 
+*/
 
-body {
+body 
+{
   background-color: black;
 }
 
-ul {
-	
-item-align: center;
+ul 
+{
+  align-items: center;
   list-style-type: none;
   width:auto;
   margin: auto;
@@ -25,11 +27,13 @@ item-align: center;
   position:relative;
 }
 
-li {
+li 
+{
   float: left;
 }
 
-li a {
+li a 
+{
   display: block;
   color: #DAA520;
   text-align: center;
@@ -42,35 +46,40 @@ li a {
   border:white;
 }
 
-li a:hover {
-border:white;
+li a:hover
+{
+  border:white;
   background-color: #111;
 }
 
-p1 {
+p1
+{
   color: #DAA520;
 }
 
-h1{
+h1
+{
   text-align: center;
   color: #DAA520;
 }
 
-h2{
-background:#778899;
-background-image: linear-gradient(#778899, #333);
-font-family: 'Courier New', monospace;
-text-align:center;
-width:auto;
-font-size:50px;
-margin:auto;
-height:100px;
-padding:20x 20x;
-color: white;
-font-weight: bold;
+h2
+{
+  background:#778899;
+  background-image: linear-gradient(#778899, #333);
+  font-family: 'Courier New', monospace;
+  text-align:center;
+  width:auto;
+  font-size:50px;
+  margin:auto;
+  height:100px;
+  padding:20x 20x;
+  color: white;
+  font-weight: bold;
 }
 
-html { 
+html 
+{ 
   background: #778899 no-repeat center center fixed;
   background-image: linear-gradient(90deg,#778899, #333);
   -webkit-background-size: cover;
@@ -79,14 +88,16 @@ html {
   background-size: cover;
 }
 
-footer {
+footer 
+{
   text-align: center;
     padding: 10px;
     background-color: black;
     color: #00b2ee;
 }
 
-.map
+#map
 {
-  border: #DAA520;
+  border-color: #DAA520;
+  display: block;
 }
