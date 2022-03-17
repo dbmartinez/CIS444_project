@@ -1,4 +1,4 @@
-<!--
+/*
 
 CIS444
 food_dashboard.css
@@ -9,7 +9,7 @@ Daniel B. Martinez
 Dustin Tabar
 Mohammed Ghadimzadeh
 Robert Painter
--->
+*/
 
 body {
     background-color: black;
@@ -57,7 +57,7 @@ h2 {
     font-size: 50px;
     margin: auto;
     height: 100px;
-    padding: 20x 20x;
+    padding: 20px 20px;
     color: #DAA520;
     font-weight: bold;
 }
