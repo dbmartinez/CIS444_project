@@ -1,4 +1,4 @@
-<!-- CIS444
+/* CIS444
 	 beer_dashboard.css
 	 Programmers:
             Alejandro Quinones Gamboa
@@ -7,7 +7,7 @@
             Dustin Tabar
             Mohammed Ghadimzadeh
             Robert Painter
--->
+*/
 
 body {
   background-color: black;
@@ -55,7 +55,7 @@ width:auto;
 font-size:50px;
 margin:auto;
 height:100px;
-padding:20x 20x;
+padding:20px 20px;
 color: #DAA520;
 font-weight: bold;
 }
