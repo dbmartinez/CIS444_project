@@ -92,3 +92,11 @@ footer {
     background-color: black;
     color: #00b2ee;
 }
+
+.image1 {
+  float: left;
+}
+
+.image2 {
+  float: right;
+}
