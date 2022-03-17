@@ -9,6 +9,10 @@
             Robert Painter
 -->
 
+body {
+  background-color: black;
+}
+
 ul {
 	
 item-align:center;
@@ -27,7 +31,7 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: #DAA520;
   text-align: center;
   padding: 14px 16px;
   width:auto;
@@ -68,4 +72,17 @@ html {
 .beerImg {
 	height: 200px;
 	width: 220px;
+}
+
+.image {
+  max-height: 100%;
+  max-width:100%;
+  height:auto;
+}
+
+footer {
+  text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: #00b2ee;  ;
 }
