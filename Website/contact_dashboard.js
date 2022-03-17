@@ -9,7 +9,7 @@ function userInput()
     var lastN = document.getElementById("userLN");
     var userE = document.getElementById("useremail");
     var userS = document.getElementById("usersubject");
-	var userM = document.getElementById("usercomments");    
+    var userM = document.getElementById("usercomments");    
 
 	// check to see if user input is correct string
 	if(firstN.value == "")
