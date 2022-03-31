@@ -3,34 +3,40 @@
 <head>
   <html lang="en">
 <title>One Piece Brewery</title>
-<meta charset = "utf-8">
+  <meta charset="utf-8">
+  
 <link rel="main menu dahsboard stylesheet" href="mainpage.css">
+  <script type = "javascript" src = "script.js" >
+		</script>
 </head>
 <body>
 
 <h2>One Piece Brewery</h2>
 <ul>
-      <li><a href="main_menu_dashboard.html">Main Menu</a></li>
-      <li><a href="beer_dashboard.html">Beer</a></li>
-      <li><a href="food_dashboard.html">Food</a></li>
-      <li><a href="contact_dashboard.html">Contact</a></li>
-      <li><a href="about_dashboard.html">About Us</a></li>
+      <li id="nav"><a href="main_menu_dashboard.html">Main Menu</a></li>
+      <li id="nav"><a href="beer_dashboard.html">Beer</a></li>
+      <li id="nav"><a href="food_dashboard.html">Food</a></li>
+      <li id="nav"><a href="contact_dashboard.html">Contact</a></li>
+      <li id="nav"><a href="about_dashboard.html">About Us</a></li>
 </ul>
 <h2>SHOP</h2>
 <h3> Click add to put item in cart</h3>
-<form>
-    <button style="float:right;"> Cart </button>
+  <div>
+  <div id="total"></div><p> items are in your cart. <br /> click checkout to continue.</p>
+    </div>
+<form action="">
+    <button id="cart_button" ><a href="checkout.html"> Cart Checkout</a> </button>
 	<ul> 
-		<li> 6 pack <button id="add" onclick="add()">ADD</button> </li>
+		<li id="item"> 6 pack <button id="add6" onclick=add(1)>ADD</button> </li>
 		<br />
-		<li> 12 pack <button id="add" onclick="add()">ADD</button> </li>
+		<li id="item"> 12 pack <button id="add12" onclick=add(2)>ADD</button> </li>
 		<br />
-		<li> 24 pack <button id="add" onclick="add()">ADD</button> </li>
+		<li id="item"> 24 pack <button id="add24" onclick=add(3)>ADD</button> </li>
 		<br />
-		<li> T shirt <button id="add" onclick="add()">ADD</button> </li>
+		<li id="item"> T shirt <button id="addt" onclick=add(4)>ADD</button> </li>
 		<br />
-		<li> Hat <button id="add" onclick="add()">ADD</button> </li>
+		<li id="item"> Hat <button id="addh" onclick=add(5)>ADD</button> </li>
 	</ul>
-</form
+</form>
 </body>
 </html>
