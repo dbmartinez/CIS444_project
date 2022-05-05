@@ -13,7 +13,7 @@ CREATE TABLE user (
     password varchar(255),
     Address varchar(255),
     creditcardnum int(30),
-    contact_flag int(1),
+    contact_flag int(1)
 );
 
 CREATE TABLE product(
@@ -23,12 +23,10 @@ CREATE TABLE product(
     P_price double (7,2)
 );
 
-CREATE TABLE order(
+CREATE TABLE orders(
     O_id int(8) PRIMARY KEY,
     U_id int(8),
     P_id int(8),
     Order_date date,
-    Shipment_flag bool,
-    CONSTRAINT userFK FOREIGN KEY (u_id) REFERENCES user(uid)
-    CONSTRAINT prodFK FOREIGN KEY (p_id) REFERENCES product(pid)
+    Shipment_flag bool
 );
