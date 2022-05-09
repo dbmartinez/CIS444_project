@@ -1,0 +1,370 @@
+
+/* for all pages */
+body {
+  background-color: black;
+  min-height: 400px;
+  background-image: url("RestaurantPhoto.jpg");
+  /*background-image: url("RestaurantPhoto2.jpg");*/
+  /*background-image: url("RestaurantPhoto3.jpg");*/
+  background-size: cover;
+  background-attachment: scroll;
+  background-blend-mode: lighten;
+}
+
+img {
+  vertical-align: middle;
+}
+
+p {
+  text-align: center;
+  color: #DAA520;
+}
+
+p.lightblue {
+  color: #00b2ee;
+}
+
+form {
+  color: #DAA520;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1 {
+  background: black;
+  background-image: linear-gradient(black, #4682B4, black);
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  width: auto;
+  font-size: 50px;
+  margin: auto;
+  height: 100px;
+  padding: 20px 20px;
+  color: #DAA520;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  color: #DAA520;
+}
+
+ul {
+  item-align: center;
+  list-style-type: none;
+  width:auto;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position:relative;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #DAA520;
+  text-align: center;
+  padding: 14px 16px;
+  width: auto;
+  font-family: 'Courier New', monospace;
+  margin: auto;
+  text-decoration: none;
+  font-weight: bold;
+  border: white;
+}
+
+li a:hover {
+  border:white;
+  background-color: #111;
+}
+
+html { 
+  background: black no-repeat center center fixed;
+  background-image: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  color: #00b2ee;
+}
+
+.image1 {
+  float: left;
+}
+
+.image2 {
+  float: right;
+}
+
+/* shop */
+#nav {
+  float: left;
+}
+
+#nav a {
+  display: block;
+  color: #DAA520;
+  text-align: center;
+  padding: 14px 16px;
+  width:auto;
+  font-family: 'Courier New', monospace;
+  margin:auto;
+  text-decoration: none;
+  font-weight: bold;
+  border:white;
+}
+
+#cart_button {
+  float: right;
+  margin: 0px 200px 0px 0px;
+  height: 39px;
+  width:100px;
+}
+
+#item {
+  size: 20px;
+}
+
+#add {
+  size: 20 px;
+  height: 39px;
+  width:100px;
+  margin: 50px 0px 0px 100px;
+}
+
+/* contact */
+label {
+  color: #DAA520;
+}
+
+/* about us */
+#map {
+  border-color: #DAA520;
+  display: block;
+}
+
+/* beer */
+.beerImg {
+  height: 300px;
+  width: 320px;
+}
+
+/* food */
+.foodImage {
+  height: 200px;
+  width: 315px;
+}
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+  color: #DAA520;
+  font-size: 25px;
+}
+
+h6 {
+  text-align: center;
+  color: #DAA520;
+  font-size: 15px;
+}
+
+h3.food-item-title {
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+h6.food-item-description {
+    text-wrap: normal;
+    text-align: ;
+    font-family: sans-serif;
+}
+
+input[type=number] {
+    width: 50px;
+    height: 17px;
+}
+
+input[type=radio] {
+    border: 0px;
+    height: 1em;
+    vertical-align:auto;
+    margin-right: 5px;
+}
+
+input[type=submit] {
+    background: #f28207;
+    color: black;
+    border-style: outset;
+    border-color: #613505;
+    height: 24px;
+    width: 100px;
+    font: bold 12px arial, sans-serif;
+    text-shadow: none;
+    position: relative;
+    top: 0.5px;
+}
+
+details {
+    background: #9e8760;
+    color: #444;
+    padding: 18px;
+    border: solid thin;
+    border-color: #613505;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    width: 500px;
+    font: bold 12px arial, sans-serif;
+    text-shadow: none;
+}
+
+/* The container */
+.radioContainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radioContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radioCheckmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radioContainer:hover input ~ .radioCheckmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radioContainer input:checked ~ .radioCheckmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radioCheckmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radioContainer input:checked ~ .radioCheckmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radioContainer .radioCheckmark:after {
+    top: 4px;
+    left: 4.5px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* Customize the label (the container) */
+.checkboxContainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkboxCheckmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxContainer:hover input ~ .checkboxCheckmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxContainer input:checked ~ .checkboxCheckmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkboxCheckmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxContainer input:checked ~ .checkboxCheckmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxContainer .checkboxCheckmark:after {
+    left: 4px;
+    top: 2.5px;
+    width: 2.5px;
+    height: 5px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
