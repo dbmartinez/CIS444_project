@@ -1,158 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  	<head>
-		<title>One Piece Brewery</title>
-    	<meta charset = "utf-8">
-    	<link rel="beer dahsboard stylesheet" href="beer_dashboard.css">
-  	</head>
-  	<body>
-  
+  <head>
+    <title>One Piece Brewery</title>
+    <meta charset = "utf-8">
+    <link rel="beer dashboard stylesheet" href="mainpage.css">
+  </head>
+  <body>
     <header >
-    	<img class="image" src="WebsiteLogo.jpeg" alt="Monkey D. Luffy" width="1115" height="400">
+      <img class="image" src="WebsiteLogo.jpeg" alt="Monkey D. Luffy" width="1300" height="100">
     </header>
     
     <ul>
-      	<li><a href="main_menu_dashboard.html">Main Menu</a></li>
-      	<li><a href="food_dashboard.html">Food</a></li>
-      	<li><a href="shop_dashboard.html">Shop</a></li>
-      	<li><a href="contact_dashboard.html">Contact</a></li>
-      	<li><a href="about_dashboard.html">About Us</a></li>
+      <li><a href="main_menu_dashboard.html">Main Menu</a></li>
+      <li><a href="food_dashboard.html">Food</a></li>
+      <li><a href="shop_dashboard.html">Shop</a></li>
+      <li><a href="contact_dashboard.html">Contact</a></li>
+      <li><a href="about_dashboard.html">About Us</a></li>
     </ul>
     
-    <h2>CRAFT BEER</h2>
+    <h1>CRAFT BEER</h1>
+    <center>
+      <p>***Must be ove the age of 21 to purchase alcohol***</p>
+      <img src="FrankPorter.png" class="beerImg" alt="Frank Porter can"/>
+          <h3>FRANK PORTER</h3>
+          <h6>ENGLISH BROWN PORTER WITH A DARK BROWN COLOR AND MILD FLAVORS OF COFFEE AND CHOCOLATE</h6>
+          <label>Quantity:<input type="number" /></label>
+          <input id="submitButton1" type="submit" value="Add to Order"/> <br/>
+          <input type="radio" id="FrankPorter_Can" name="FrankPorterRadio" value="FrankPorter">
+          <label for="FrankPorter_Can">CAN</label><br/>
+          <input type="radio" id="FrankPorter_SixPack" name="FrankPorterRadio" value="FrankPorter">
+          <label for="FrankPorter_SixPack">SIX PACK</label><br/><br/>
     
-    <form>
-	    <img src="FrankPorter.jpeg" class="beerImg" alt="Frank Porter can" />
-	      	<h3 class="beer-item-title">FRANK PORTER</h3>
-        	<h6 class="beer-item-description">
-				ENGLISH BROWN PORTER WITH A DARK BROWN COLOR AND MILD FLAVORS OF COFFEE AND CHOCOLATE
-        	</h6>
-        	<label>Quantity:<input type="number" /></label>
-        	<input id="submitButton1" type="submit" value="Add to Order" /> <br />
-			<input type="radio" id="FrankPorter_Can" name="FrankPorterRadio" value="FrankPorter">
-  			<label for="FrankPorter_Can">CAN</label><br/>
-			<input type="radio" id="FrankPorter_SixPack" name="FrankPorterRadio" value="FrankPorter">
-  			<label for="FrankPorter_SixPack">SIX PACK</label><br/><br/>
-		
-	    <img src="KobyTripel.jpeg" class="beerImg" alt="Koby Tripel can" />
-	      	<h3 class="beer-item-title">KOBY TRIPEL</h3>
-        	<h6 class="beer-item-description">
-				A REFRESHING PALE ALE THAT PACKS A PUNCH WITH MALTY UNDERTONES AND A SMOOTH FINISH
-        	</h6>
-        	<label>Quantity:<input type="number" /></label>
-        	<input id="submitButton2" type="submit" value="Add to Order" /> <br />
-			<input type="radio" id="KobyTripel_Can" name="KobyTripelRadio" value="KobyTripel">
-  			<label for="KobyTripel_Can">CAN</label><br/>
-			<input type="radio" id="KobyTripel_SixPack" name="KobyTripelRadio" value="KobyTripel">
-  			<label for="KobyTripel_SixPack">SIX PACK</label><br/><br/>
-		
-	    <img src="LuffyPaleAle.jpeg" class="beerImg" alt="Luffy Pale Ale can" />
-	      	<h3 class="beer-item-title">LUFFY PALE ALE</h3>
-        	<h6 class="beer-item-description">
-				THIS MALTY PALE ALE IS GREAT FOR A LATE AFTERNOON DRINK WITH ITS LIGHT COLOR AND HOP FORWARD FLAVOR
-        	</h6>
-        	<label>Quantity:<input type="number" /></label>
-        	<input id="submitButton3" type="submit" value="Add to Order" /> <br />
-			<input type="radio" id="LuffyPaleAle_Can" name="LuffyPaleAleRadio" value="LuffyPaleAle">
-  			<label for="LuffyPaleAle_Can">CAN</label><br/>
-			<input type="radio" id="LuffyPaleAle_SixPack" name="LuffyPaleAleRadio" value="LuffyPaleAle">
-  			<label for="LuffyPaleAle_SixPack">SIX PACK</label><br/><br/>
-		
-	    <img src="NamiS&SPilsner.jpeg" class="beerImg" alt="Nami S&S Pilsner can" />
-	      	<h3 class="beer-item-title">NAMI S&S PILSNER</h3>
-        	<h6 class="beer-item-description">
-				AROMATIC AND FLAVORFUL, NAMI S&S PILSNER GIVES CLEAN MALT NOTES IN THIS HOPPY DRINK
-        	</h6>
-        	<label>Quantity:<input type="number" /></label>
-        	<input id="submitButton4" type="submit" value="Add to Order" /> <br />
-			<input type="radio" id="NamiS&SPilsner_Can" name="NamiS&SPilsnerRadio" value="NamiS&SPilsner">
-  			<label for="NamiS&SPilsner_Can">CAN</label><br/>
-			<input type="radio" id="NamiS&SPilsner_SixPack" name="NamiS&SPilsnerRadio" value="NamiS&SPilsner">
-  			<label for="NamiS&SPilsner_SixPack">SIX PACK</label><br/><br/>
-		
-	    <img src="RobinMexicanLager.jpeg" class="beerImg" alt="Robin Mexican Lager can" />
-	      	<h3 class="beer-item-title">ROBIN MEXICAN LAGER</h3>
-        	<h6 class="beer-item-description">
-				FIND YOU PARADISE ANYWHERE WITH A REFRESHING MEXICAN LAGER, TRY WITH A SQUEEZE OF LIME
-        	</h6>
-        	<label>Quantity:<input type="number" /></label>
-        	<input id="submitButton5" type="submit" value="Add to Order" /> <br />
-			<input type="radio" id="RobinMexicanLager_Can" name="RobinMexicanLagerRadio" value="RobinMexicanLager">
-  			<label for="RobinMexicanLager_Can">CAN</label><br/>
-			<input type="radio" id="RobinMexicanLager_SixPack" name="RobinMexicanLagerRadio" value="RobinMexicanLager">
-  			<label for="RobinMexicanLager_SixPack">SIX PACK</label><br/><br/>
-		
-	    <img src="SanjiPaleLager.jpeg" class="beerImg" alt="Sanji Pale Lager can" />
-	      	<h3 class="beer-item-title">SANJI PALE LAGER</h3>
-        	<h6 class="beer-item-description">
-				A DRY, LEAN, AND CRISP LAGER ATTRIBUTED TO A PERFECT BALANCE OF NOBEL HOPS 
-        	</h6>
-        	<label>Quantity:<input type="number" /></label>
-        	<input id="submitButton6" type="submit" value="Add to Order" /> <br />
-			<input type="radio" id="SanjiPaleLager_Can" name="SanjiPaleLagerRadio" value="SanjiPaleLager">
-  			<label for="SanjiPaleLager_Can">CAN</label><br/>
-			<input type="radio" id="SanjiPaleLager_SixPack" name="SanjiPaleLagerRadio" value="SanjiPaleLager">
-  			<label for="SanjiPaleLager_SixPack">SIX PACK</label><br/><br/>
-		
-	    <img src="TonyChopperIPA.jpeg" class="beerImg" alt="Tony Chopper IPA can" />
-			<h3 class="beer-item-title">TONY CHOPPER IPA</h3>
-        	<h6 class="beer-item-description">
-				A FAN FAVORITE, THIS BITTER AND HOPPY IPA IS FOR GOOD TIMES WITH GREAT FRIENDS
-        	</h6>
-        	<label>Quantity:<input type="number" /></label>
-        	<input id="submitButton7" type="submit" value="Add to Order" /> <br />
-			<input type="radio" id="TonyChopperIPA_Can" name="TonyChopperIPARadio" value="TonyChopperIPA">
-  			<label for="TonyChopperIPA_Can">CAN</label><br/>
-			<input type="radio" id="TonyChopperIPA_SixPack" name="TonyChopperIPARadio" value="TonyChopperIPA">
-  			<label for="TonyChopperIPA_SixPack">SIX PACK</label><br/><br/>
-		
-	    <img src="UsoppStout.jpeg" class="beerImg" alt="Usopp Stout can" />
-	      	<h3 class="beer-item-title">USOPP STOUT</h3>
-        	<h6 class="beer-item-description">
-				DARK IN COLOR, OUR STOUT CARRIES HINTS OF COFFEE AND MOLASSES WITH A SMOOTH FINISH
-        	</h6>
-        	<label>Quantity:<input type="number" /></label>
-        	<input id="submitButton8" type="submit" value="Add to Order" /> <br />
-			<input type="radio" id="UsoppStout_Can" name="UsoppStoutRadio" value="UsoppStout">
-  			<label for="UsoppStout_Can">CAN</label><br/>
-			<input type="radio" id="UsoppStout_SixPack" name="UsoppStoutRadio" value="UsoppStout">
-  			<label for="UsoppStout_SixPack">SIX PACK</label><br/><br/>
-		
-	    <img src="ZoroDoubleIPA.jpeg" class="beerImg" alt="Zoro Double IPA can" />
-	      	<h3 class="beer-item-title">ZORO DOUBLE IPA</h3>
-        	<h6 class="beer-item-description">
-				OUR BOLDEST AND DELIGHTFULLY BITTER COMPLEX DOUBLE IPA WITH A HIGH ABV
-        	</h6>
-        	<label>Quantity:<input type="number" /></label>
-        	<input id="submitButton9" type="submit" value="Add to Order" /> <br />
-			<input type="radio" id="ZoroDoubleIPA_Can" name="ZoroDoubleIPARadio" value="ZoroDoubleIPA">
-  			<label for="ZoroDoubleIPA_Can">CAN</label><br/>
-			<input type="radio" id="ZoroDoubleIPA_SixPack" name="ZoroDoubleIPARadio" value="ZoroDoubleIPA">
-  			<label for="ZoroDoubleIPA_SixPack">SIX PACK</label><br/><br/>
-		
-    </form>
+      <img src="KobyTripel.png" class="beerImg" alt="Koby Tripel can"/>
+          <h3>KOBY TRIPEL</h3>
+          <h6>A REFRESHING PALE ALE THAT PACKS A PUNCH WITH MALTY UNDERTONES AND A SMOOTH FINISH</h6>
+          <label>Quantity:<input type="number"/></label>
+          <input id="submitButton2" type="submit" value="Add to Order"/> <br/>
+          <input type="radio" id="KobyTripel_Can" name="KobyTripelRadio" value="KobyTripel">
+          <label for="KobyTripel_Can">CAN</label><br/>
+          <input type="radio" id="KobyTripel_SixPack" name="KobyTripelRadio" value="KobyTripel">
+          <label for="KobyTripel_SixPack">SIX PACK</label><br/><br/>
+    
+      <img src="LuffyPaleAle.png" class="beerImg" alt="Luffy Pale Ale can"/>
+          <h3>LUFFY PALE ALE</h3>
+          <h6>THIS MALTY PALE ALE IS GREAT FOR A LATE AFTERNOON DRINK WITH ITS LIGHT COLOR AND HOP FORWARD FLAVOR</h6>
+          <label>Quantity:<input type="number" /></label>
+          <input id="submitButton3" type="submit" value="Add to Order"/> <br/>
+          <input type="radio" id="LuffyPaleAle_Can" name="LuffyPaleAleRadio" value="LuffyPaleAle">
+          <label for="LuffyPaleAle_Can">CAN</label><br/>
+          <input type="radio" id="LuffyPaleAle_SixPack" name="LuffyPaleAleRadio" value="LuffyPaleAle">
+          <label for="LuffyPaleAle_SixPack">SIX PACK</label><br/><br/>
+    
+      <img src="NamiS&SPilsner.png" class="beerImg" alt="Nami S&S Pilsner can"/>
+          <h3>NAMI S&S PILSNER</h3>
+          <h6>AROMATIC AND FLAVORFUL, NAMI S&S PILSNER GIVES CLEAN MALT NOTES IN THIS HOPPY DRINK</h6>
+          <label>Quantity:<input type="number" /></label>
+          <input id="submitButton4" type="submit" value="Add to Order"/> <br/>
+          <input type="radio" id="NamiS&SPilsner_Can" name="NamiS&SPilsnerRadio" value="NamiS&SPilsner">
+          <label for="NamiS&SPilsner_Can">CAN</label><br/>
+          <input type="radio" id="NamiS&SPilsner_SixPack" name="NamiS&SPilsnerRadio" value="NamiS&SPilsner">
+          <label for="NamiS&SPilsner_SixPack">SIX PACK</label><br/><br/>
+    
+      <img src="RobinMexicanLager.png" class="beerImg" alt="Robin Mexican Lager can"/>
+          <h3>ROBIN MEXICAN LAGER</h3>
+          <h6>FIND YOU PARADISE ANYWHERE WITH A REFRESHING MEXICAN LAGER, TRY WITH A SQUEEZE OF LIME</h6>
+          <label>Quantity:<input type="number" /></label>
+          <input id="submitButton5" type="submit" value="Add to Order"/> <br/>
+          <input type="radio" id="RobinMexicanLager_Can" name="RobinMexicanLagerRadio" value="RobinMexicanLager">
+          <label for="RobinMexicanLager_Can">CAN</label><br/>
+          <input type="radio" id="RobinMexicanLager_SixPack" name="RobinMexicanLagerRadio" value="RobinMexicanLager">
+          <label for="RobinMexicanLager_SixPack">SIX PACK</label><br/><br/>
+    
+      <img src="SanjiPaleLager.png" class="beerImg" alt="Sanji Pale Lager can"/>
+          <h3>SANJI PALE LAGER</h3>
+          <h6>A DRY, LEAN, AND CRISP LAGER ATTRIBUTED TO A PERFECT BALANCE OF NOBEL HOPS</h6>
+          <label>Quantity:<input type="number" /></label>
+          <input id="submitButton6" type="submit" value="Add to Order"/> <br/>
+          <input type="radio" id="SanjiPaleLager_Can" name="SanjiPaleLagerRadio" value="SanjiPaleLager">
+          <label for="SanjiPaleLager_Can">CAN</label><br/>
+          <input type="radio" id="SanjiPaleLager_SixPack" name="SanjiPaleLagerRadio" value="SanjiPaleLager">
+          <label for="SanjiPaleLager_SixPack">SIX PACK</label><br/><br/>
+    
+      <img src="TonyChopperIPA.png" class="beerImg" alt="Tony Chopper IPA can"/>
+        <h3>TONY CHOPPER IPA</h3>
+        <h6>A FAN FAVORITE, THIS BITTER AND HOPPY IPA IS FOR GOOD TIMES WITH GREAT FRIENDS</h6>
+          <label>Quantity:<input type="number" /></label>
+          <input id="submitButton7" type="submit" value="Add to Order"/> <br/>
+          <input type="radio" id="TonyChopperIPA_Can" name="TonyChopperIPARadio" value="TonyChopperIPA">
+          <label for="TonyChopperIPA_Can">CAN</label><br/>
+          <input type="radio" id="TonyChopperIPA_SixPack" name="TonyChopperIPARadio" value="TonyChopperIPA">
+          <label for="TonyChopperIPA_SixPack">SIX PACK</label><br/><br/>
+    
+      <img src="UsoppStout.png" class="beerImg" alt="Usopp Stout can" />
+          <h3>USOPP STOUT</h3>
+          <h6>DARK IN COLOR, OUR STOUT CARRIES HINTS OF COFFEE AND MOLASSES WITH A SMOOTH FINISH</h6>
+          <label>Quantity:<input type="number" /></label>
+          <input id="submitButton8" type="submit" value="Add to Order"/> <br/>
+          <input type="radio" id="UsoppStout_Can" name="UsoppStoutRadio" value="UsoppStout">
+          <label for="UsoppStout_Can">CAN</label><br/>
+          <input type="radio" id="UsoppStout_SixPack" name="UsoppStoutRadio" value="UsoppStout">
+          <label for="UsoppStout_SixPack">SIX PACK</label><br/><br/>
+    
+      <img src="ZoroDoubleIPA.png" class="beerImg" alt="Zoro Double IPA can" />
+          <h3>ZORO DOUBLE IPA</h3>
+          <h6>OUR BOLDEST AND DELIGHTFULLY BITTER COMPLEX DOUBLE IPA WITH A HIGH ABV</h6>
+          <label>Quantity:<input type="number" /></label>
+          <input id="submitButton9" type="submit" value="Add to Order"/> <br/>
+          <input type="radio" id="ZoroDoubleIPA_Can" name="ZoroDoubleIPARadio" value="ZoroDoubleIPA">
+          <label for="ZoroDoubleIPA_Can">CAN</label><br/>
+          <input type="radio" id="ZoroDoubleIPA_SixPack" name="ZoroDoubleIPARadio" value="ZoroDoubleIPA">
+          <label for="ZoroDoubleIPA_SixPack">SIX PACK</label><br/><br/>
+      </form>
+    </center>
+    
     <footer>
-      	<img class="image1" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
-      	<img class="image2" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
+      <img class="image1" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
+      <img class="image2" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
 
-      	<p style="text-align:center"><strong>One Piece Brewery</strong><br>
-      	<a href="mailto:OnePieceBrewery@gmail.com">Email Us Here</a><br></p>
+      <p class="lightblue">
+        One Piece Brewery<br>
+        333 S Twin Oaks Valley Rd,<br>
+        San Marcos, CA 92096<br>
+        Tel: 760-867-5309<br><br>
 
-		    <p>
-		        <strong>GET IN TOUCH!</strong><br>
-		        One Piece Brewery<br>
-		        333 S Twin Oaks Valley Rd,<br>
-		        San Marcos, CA 92096<br>
-		
-		        Tel: 760-867-5309<br><br>
-		
-		        <strong>Hours of Operaton:</strong><br>
-		        Sunday - Thursday : 11am-9pm<br>
-		        Friday & Saturday: 11am-11pm<br><br>
-		
-		        Copyright ©2022 by One Piece Brewery - All Rights Reserved
-		        <br>Powered by Awesomeness
-		    </p>
-	    </footer>
-	</body>
+        <strong>Hours of Operaton:</strong><br>
+        Sunday - Thursday : 11am-9pm<br>
+        Friday & Saturday: 11am-11pm<br><br>
+
+        Copyright ©2022 by One Piece Brewery - All Rights Reserved
+        <br>Powered by Awesomeness
+      </p>
+    </footer>
+  </body>
 </html>
