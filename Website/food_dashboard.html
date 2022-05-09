@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>One Piece Brewery</title>
     <meta charset="utf-8">
     <link rel="food dashboard stylesheet" href="food_dashboard.css">
+    <script type="text/javascript" src="food_dashboard.js"></script>
 </head>
 <body>
 
@@ -18,7 +19,7 @@
       <li><a href="contact_dashboard.html">Contact</a></li>
       <li><a href="about_dashboard.html">About Us</a></li>
     </ul>
-
+    
     <h2>FOOD MENU</h2>
     <form>
         <img class="foodImage" src="All-AmericanBurger.png" alt="All-American Burger" />
@@ -27,7 +28,74 @@
             DOUBLE PATTY / HAND-SMASHED / SEA SALT / COARSE BLACK PEPPER / AMERICAN CHEESE / <br />
             SHREDDED ICEBERG LETTUCE / TOMATO / PICKLES / MUSTARD / MAYO / CHALLAH BUN / NATURAL-CUT FRENCH FRIES
         </h6>
-        <label>Quantity:<input type="number" /></label>
+        <details>
+            <summary>CHEESE</summary><br />
+            <label class="radioContainer">
+                AMERICAN
+                <input type="radio" checked="checked" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+            <label class="radioContainer">
+                CHEDDAR
+                <input type="radio" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+            <label class="radioContainer">
+                SWISS
+                <input type="radio" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+            <label class="radioContainer">
+                PEPPER JACK
+                <input type="radio" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+            <label class="radioContainer">
+                NO CHEESE
+                <input type="radio" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+        </details>
+        <details>
+            <summary>OPTIONS</summary><br />
+            <label class="checkboxContainer">
+                GRILLED WHITE ONIONS
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                LETTUCE
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                TOMATO
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                PICKLES
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                MAYO
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                MUSTARD
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                BUN
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+        </details>
+        <br />
+        <label>Quantity:<input type="number" min="1" /></label>
         <input id="submitButton1" type="submit" value="Add to Order" /> <br /><br />
 
         <img class="foodImage" src="BuffaloMac&Cheese.png" alt="Buffalo Mac & Cheese">
@@ -35,7 +103,109 @@
         <h6 class="food-item-description">
             BONELESS WINGS / MEDIUM BUFFALO SAUCE / CHEDDAR-JACK CHEESE / PANKO TOPPING
         </h6>
-        <label>Quantity:<input type="number" /></label>
+        <div id="limitCheckbox1">
+            <details>
+                <summary>SIGNATURE SAUCE (REQUIRED: CHOOSE ONE)</summary><br />
+                <label class="checkboxContainer">
+                    PARMESAN GARLIC
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    HONEY BBQ
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    MEDIUM
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    LEMON PEPPER
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    MILD
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    SPICY GARLIC
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    SWEET BBQ
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    MANGO HABANERO
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    BUFFALO
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    ORIGINAL BUFFALO
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    HOT
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    CARIBBEAN JERK
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    TERIYAKI
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    CHIPOTLE BBQ
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    SALT & VINEGAR
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    THAI CURRY
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    NASHVILLE HOT
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    LEMON PEPPER
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    ORANGE CHICKEN
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+            </details>
+        </div>
+        <script type="text/javascript">onlyOneCheckBox()</script>
+        <br />
+        <label>Quantity:<input type="number" min="1" /></label>
         <input id="submitButton2" type="submit" value="Add to Order" /> <br /><br />
 
         <img class="foodImage" src="BuffaloRanchChickenSandwich.png" alt="Buffalo Ranch Chicken Sandwich">
@@ -44,7 +214,109 @@
             HAND-BREADED CHICKEN / MEDIUM BUFFALO SAUCE / RANCH / SHREDDED ICEBERG LETTUCE / TOMATO / CHALLAH BUN / <br />
             NATURAL-CUT FRENCH FRIES
         </h6>
-        <label>Quantity:<input type="number" /></label>
+        <div id="limitCheckbox1">
+            <details>
+                <summary>SIGNATURE SAUCE (REQUIRED: CHOOSE ONE)</summary><br />
+                <label class="checkboxContainer">
+                    PARMESAN GARLIC
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    HONEY BBQ
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    MEDIUM
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    LEMON PEPPER
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    MILD
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    SPICY GARLIC
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    SWEET BBQ
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    MANGO HABANERO
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    BUFFALO
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    ORIGINAL BUFFALO
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    HOT
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    CARIBBEAN JERK
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    TERIYAKI
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    CHIPOTLE BBQ
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    SALT & VINEGAR
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    THAI CURRY
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    NASHVILLE HOT
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    LEMON PEPPER
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    ORANGE CHICKEN
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+            </details>
+        </div>
+        <script type="text/javascript">onlyOneCheckBox()</script>
+        <br />
+        <label>Quantity:<input type="number" min="1" /></label>
         <input id="submitButton3" type="submit" value="Add to Order" /> <br /><br />
 
         <img class="foodImage" src="ChickenQuesadilla.png" alt="Chicken Quesadilla">
@@ -53,7 +325,36 @@
             GRIDDLED FLOUR TORTILLA / PULLED CHICKEN / CHIPOTLE BBQ SEASONING / CHEDDAR-JACK CHEESE / HOUSE-MADE PICO DE <br />
             GALLO / ICEBERG LETTUCE / CREMA
         </h6>
-        <label>Quantity:<input type="number" /></label>
+        <details>
+            <summary>OPTIONS</summary><br />
+            <label class="checkboxContainer">
+                PULLED CHICKEN
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                CHIPOTLE BBQ SEASONING
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                PICO DE GALLO
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                LETTUCE
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                CREMA
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+        </details>
+        <br />
+        <label>Quantity:<input type="number" min="1" /></label>
         <input id="submitButton4" type="submit" value="Add to Order" /> <br /><br />
 
         <img class="foodImage" src="ChickenSandwich.png" alt="Chicken Sandwich">
@@ -61,7 +362,26 @@
         <h6 class="food-item-description">
             HAND-BREADED CHICKEN BREAST / BEER-BATTERED / PICKLES / MAYO / CHALLAH BUN / NATURAL CUT FRENCH FRIES
         </h6>
-        <label>Quantity:<input type="number" /></label>
+        <details>
+            <summary>OPTIONS</summary><br />
+            <label class="checkboxContainer">
+                PICKLES
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                MAYO
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                BUN
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+        </details>
+        <br />
+        <label>Quantity:<input type="number" min="1" /></label>
         <input id="submitButton5" type="submit" value="Add to Order" /> <br /><br />
 
         <img class="foodImage" src="ChickenCaesarSalad.png" alt="Chicken Caesar Salad">
@@ -70,7 +390,36 @@
             GRILLED CHICKEN / ROMAINE LETTUCE / PARMESAN GARLIC / CAESAR DRESSING / SHAVED PARMESAN CHEESE / LEMON PEPPER <br />
             SEASONING / CROUTONS
         </h6>
-        <label>Quantity:<input type="number" /></label>
+        <details>
+            <summary>DRESSING</summary><br />
+            <label class="radioContainer">
+                NO DRESSING
+                <input type="radio" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+            <label class="radioContainer">
+                CAESAR
+                <input type="radio" checked="checked" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+            <label class="radioContainer">
+                BLEU CHEESE
+                <input type="radio" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+            <label class="radioContainer">
+                RANCH
+                <input type="radio" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+            <label class="radioContainer">
+                VIDALIA ONION DRESSING
+                <input type="radio" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+        </details>
+        <br />
+        <label>Quantity:<input type="number" min="1" /></label>
         <input id="submitButton6" type="submit" value="Add to Order" /> <br /><br />
 
         <img class="foodImage" src="Chips&Salsa.png" alt="Chips & Salsa">
@@ -78,19 +427,38 @@
         <h6 class="food-item-description">
             TOMATO / JALAPE&Ntilde;OS / ONION / CILANTRO / HOUSE-MADE TORTILLA CHIPS
         </h6>
-        <label>Quantity:<input type="number" /></label>
+        <details>
+            <summary>OPTIONS</summary><br />
+            <label class="checkboxContainer">
+                PICO DE GALLO
+                <input type="checkbox" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+        </details>
+        <br />
+        <label>Quantity:<input type="number" min="1" /></label>
         <input id="submitButton7" type="submit" value="Add to Order" /> <br /><br />
 
         <img class="foodImage" src="JumboPretzel.jpeg" alt="Jumbo Pretzel">
         <h3 class="food-item-title">Jumbo Pretzel</h3>
-        <h6 class="food-item description">
+        <h6 class="food-item-description">
             CLASSIC PRETZEL / CHOICE OF PLAIN OR SALTED
         </h6>
-        <p>
-            <label><input id="pretzelChoice" type="radio" name="choice" value="plain" />PLAIN</label>
-            <label><input id="pretzelChoice1" type="radio" name="choice" value="salted" />SALTED</label>
-        </p>
-        <label>Quantity:<input type="number" /></label>
+        <details>
+            <summary>SELECT OPTION</summary><br />
+            <label class="radioContainer">
+                PLAIN
+                <input type="radio" checked="checked" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+            <label class="radioContainer">
+                SALTED
+                <input type="radio" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+        </details>
+        <br />
+        <label>Quantity:<input type="number" min="1" /></label>
         <input id="submitButton8" type="submit" value="Add to Order" /> <br /><br />
 
         <img class="foodImage" src="OnionRings.png" alt="Onion Rings" />
@@ -98,7 +466,44 @@
         <h6 class="food-item-description">
             THICK-CUT ONION RINGS / BEER BATTER / SOUTHWESTERN RANCH
         </h6>
-        <label>Quantity:<input type="number" /></label>
+        <details>
+            <summary>SELECT OPTION</summary><br />
+            <label class="radioContainer">
+                LARGE BEER-BATTERED ONION RINGS
+                <input type="radio" checked="checked" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+            <label class="radioContainer">
+                REGULAR BEER-BATTERED ONION RINGS
+                <input type="radio" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+        </details>
+        <details>
+            <summary>DIPPING SAUCE</summary><br />
+            <label class="radioContainer">
+                SOUTHWESTERN RANCH
+                <input type="radio" checked="checked" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+            <label class="radioContainer">
+                RANCH
+                <input type="radio" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+            <label class="radioContainer">
+                BLEU CHEESE
+                <input type="radio" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+            <label class="radioContainer">
+                NO DRESSING
+                <input type="radio" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+        </details>
+        <br />
+        <label>Quantity:<input type="number" min="1" /></label>
         <input id="submitButton9" type="submit" value="Add to Order" /> <br /><br />
 
         <img class="foodImage" src="StreetTacos.png" alt="Street Tacos">
@@ -107,7 +512,31 @@
             PULLED CHICKEN / PARMESAN GARLIC / HOUSE-MADE PICO DE GALLO / SOUTHWESTERN RANCH / CILANTRO / FLOUR <br />
             TORTILLAS
         </h6>
-        <label>Quantity:<input type="number" /></label>
+        <details>
+            <summary>OPTIONS</summary><br />
+            <label class="checkboxContainer">
+                PARMESAN GARLIC
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                PICO DE GALLO
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                SOUTHWESTERN RANCH
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                CILANTRO
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+        </details>
+        <br />
+        <label>Quantity:<input type="number" min="1" /></label>
         <input id="submitButton10" type="submit" value="Add to Order" /> <br /><br />
 
         <img class="foodImage" src="TaterTots.png" alt="Tater Tots">
@@ -115,7 +544,69 @@
         <h6 class="food-item-description">
             CRISPY GOLDEN BROWN TATER TOTS
         </h6>
-        <label>Quantity:<input type="number" /></label>
+        <details>
+            <summary>SELECT OPTION</summary><br />
+            <label class="radioContainer">
+                LARGE TATER TOTS
+                <input type="radio" checked="checked" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+            <label class="radioContainer">
+                REGULAR TATER TOTS
+                <input type="radio" name="cChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+        </details>
+        <details>
+            <summary>CUSTOMIZE YOUR SHAREABLE</summary><br />
+            <label class="checkboxContainer">
+                CHEDDAR JACK CHEESE
+                <input type="checkbox" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                HATCH QUESO
+                <input type="checkbox" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                BACON
+                <input type="checkbox" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                CHILI
+                <input type="checkbox" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                SALT & VINEGAR (DRY SEASONING)
+                <input type="checkbox" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                LEMON PEPPER (DRY SEASONING)
+                <input type="checkbox" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                BUFFALO (DRY SEASONING)
+                <input type="checkbox" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                CHIPOTLE BBQ (DRY SEASONING)
+                <input type="checkbox" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                NO SALT AND PEPPER
+                <input type="checkbox" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+        </details>
+        <br />
+        <label>Quantity:<input type="number" min="1" /></label>
         <input id="submitButton11" type="submit" value="Add to Order" /> <br /><br />
 
         <img class="foodImage" src="UltimateNachos.png" alt="Ultimate Nachos">
@@ -124,7 +615,56 @@
             HOUSE-MADE TORTILLA CHIPS / HATCH QUESO / CHEDDAR-JACK CHEESE / HOUSE-MADE PICO DE GALLO / PICKLED HOT PEPPERS <br />
             / CREMA / CILANTRO / SALSA / CHOICE OF CHICKEN, BRISKET, CHILI, AND/OR GUACAMOLE
         </h6>
-        <label>Quantity:<input type="number" /></label>
+        <details>
+            <summary>OPTIONS</summary><br />
+            <label class="checkboxContainer">
+                CHILI (ADDITIONAL CHARGES APPLY) <!--$1.50-->
+                <input type="checkbox" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                CHICKEN (ADDITIONAL CHARGES APPLY) <!--$1.50-->
+                <input type="checkbox" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                BRISKET (ADDITIONAL CHARGES APPLY) <!--$3.00-->
+                <input type="checkbox" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                HOUSE-MADE GUACAMOLE (ADDITIONAL CHARGES APPLY) <!--$1.50-->
+                <input type="checkbox" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                PICO DE GALLO
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                PICKLED HOT PEPPERS
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                CREMA
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                CILANTRO
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+            <label class="checkboxContainer">
+                SALSA
+                <input type="checkbox" checked="checked" />
+                <span class="checkboxCheckmark"></span>
+            </label>
+        </details>
+        <br />
+        <label>Quantity:<input type="number" min="1" /></label>
         <input id="submitButton12" type="submit" value="Add to Order" /> <br /><br />
 
         <img class="foodImage" src="wings.png" alt="Wings" />
@@ -133,10 +673,141 @@
             AUTHENTIC BUFFALO, NEW YORK-STILE CHICKEN WINGS / HANDSPUN IN CHOICE OF SAUCE OR DRY SEASONING / NATURAL-CUT <br />
             FRENCH FRIES
         </h6>
-        <label>Quantity:<input type="number" /></label>
+        <details>
+            <summary>SELECT OPTION</summary><br />
+            <label class="radioContainer">
+                6 TRADITIONAL WINGS
+                <input type="radio" name="wingChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+            <label class="radioContainer">
+                10 TRADITIONAL WINGS
+                <input type="radio" checked="checked" name="wingChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+            <label class="radioContainer">
+                15 TRADITIONAL WINGS
+                <input type="radio" name="wingChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+            <label class="radioContainer">
+                20 TRADITIONAL WINGS
+                <input type="radio" name="wingChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+            <label class="radioContainer">
+                30 TRADITIONAL WINGS
+                <input type="radio" name="wingChoice" />
+                <span class="radioCheckmark"></span> <br />
+            </label>
+        </details>
+        <div id="limitCheckbox2">
+            <details>
+                <summary>SIGNATURE SAUCE (CHOOSE UP TO 2)</summary><br />
+                <label class="checkboxContainer">
+                    PARMESAN GARLIC
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    HONEY BBQ
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    MEDIUM
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    LEMON PEPPER
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    MILD
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    SPICY GARLIC
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    SWEET BBQ
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    MANGO HABANERO
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    BUFFALO
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    ORIGINAL BUFFALO
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    HOT
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    CARIBBEAN JERK
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    TERIYAKI
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    CHIPOTLE BBQ
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    SALT & VINEGAR
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    THAI CURRY
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    NASHVILLE HOT
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    LEMON PEPPER
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+                <label class="checkboxContainer">
+                    ORANGE CHICKEN
+                    <input type="checkbox" />
+                    <span class="checkboxCheckmark"></span>
+                </label>
+            </details>
+        </div>
+        <script type="text/javascript">onlyTwoCheckBoxes()</script>
+        <br />
+        <label>Quantity:<input type="number" min="1" /></label>
         <input id="submitButton13" type="submit" value="Add to Order" /> <br /><br />
 
     </form>
+    <br /> <br /> <br /> <br />
 
     <footer>
         <img class="image1" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
