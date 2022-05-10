@@ -17,146 +17,145 @@
       	<li><a href="shop_dashboard.html">Shop</a></li>
       	<li><a href="contact_dashboard.html">Contact</a></li>
       	<li><a href="about_dashboard.html">About Us</a></li>
-	<li><a href="sso.html">Login</a></li>
     </ul>
     
     <h1>CRAFT BEER</h1>
     
     <form>
 		<center>
-	    <img src="FrankPorter.png" class="beerImg" alt="Frank Porter can" />
-	      	<h3 class="food-item-title">FRANK PORTER</h3>
+	    <img src="FrankPorter.jpeg" class="beerImg" alt="Frank Porter can" />
+	      	<h3 class="food-item-title">FRANK PORTER 10% ABV</h3>
         	<h6 class="food-item-description">
 				ENGLISH BROWN PORTER WITH A DARK BROWN COLOR AND MILD FLAVORS OF COFFEE AND CHOCOLATE
         	</h6>
-        	<label>Quantity:<input type="number" min ="0" value="0"/></label>
-        	<input id="submitButton1" type="submit" value="Add to Order" /> <br />
+        	<label>Quantity:<input type="number" id="FP" min ="0" value="0"/></label>
+        	<input id="submitButton1" type="submit" value="Add to Order" onclick="calcFrank()"/> <br />
 			<details>
 				<summary>SIZE</summary>
 				<input type="radio" id="FrankPorter_Can" name="FrankPorterRadio" value="can" checked>
-				<label for="FrankPorter_Can">16oz CAN</label><br/>
+				<label for="FrankPorter_Can">16oz CAN ($4.50)</label><br/>
 				<input type="radio" id="FrankPorter_SixPack" name="FrankPorterRadio" value="six_pack">
-				<label for="FrankPorter_SixPack">SIX PACK</label><br/>
+				<label for="FrankPorter_SixPack">SIX PACK ($24.75) </label><br/>
 			</details><br/><br/>
 		
-	    <img src="KobyTripel.png" class="beerImg" alt="Koby Tripel can" />
-	      	<h3 class="food-item-title">KOBY TRIPEL</h3>
+	    <img src="KobyTripel.jpeg" class="beerImg" alt="Koby Tripel can" />
+	      	<h3 class="food-item-title">KOBY TRIPEL 9% ABV</h3>
         	<h6 class="food-item-description">
 				A REFRESHING PALE ALE THAT PACKS A PUNCH WITH MALTY UNDERTONES AND A SMOOTH FINISH
         	</h6>
-        	<label>Quantity:<input type="number" min ="0" value="0"/></label>
-        	<input id="submitButton2" type="submit" value="Add to Order" /> <br />
+        	<label>Quantity:<input type="number" id="KT" min ="0" value="0"/></label>
+        	<input id="submitButton2" type="submit" value="Add to Order" onclick="calcKoby()" /> <br />
 			<details>
 				<summary>SIZE</summary>
 				<input type="radio" id="KobyTripel_Can" name="KobyTripelRadio" value="can" checked>
-	  			<label for="KobyTripel_Can">16oz CAN</label><br/>
+	  			<label for="KobyTripel_Can">16oz CAN ($4.50)</label><br/>
 				<input type="radio" id="KobyTripel_SixPack" name="KobyTripelRadio" value="six_pack">
-	  			<label for="KobyTripel_SixPack">SIX PACK</label><br/>
+	  			<label for="KobyTripel_SixPack">SIX PACK ($24.75)</label><br/>
 			</details><br/><br/>
 		
-	    <img src="LuffyPaleAle.png" class="beerImg" alt="Luffy Pale Ale can" />
-	      	<h3 class="food-item-title">LUFFY PALE ALE</h3>
+	    <img src="LuffyPaleAle.jpeg" class="beerImg" alt="Luffy Pale Ale can" />
+	      	<h3 class="food-item-title">LUFFY PALE ALE 5% ABV</h3>
         	<h6 class="food-item-description">
 				THIS MALTY PALE ALE IS GREAT FOR A LATE AFTERNOON DRINK WITH ITS LIGHT COLOR AND HOP FORWARD FLAVOR
         	</h6>
-        	<label>Quantity:<input type="number" min ="0" value="0"/></label>
-        	<input id="submitButton3" type="submit" value="Add to Order" /> <br />
+        	<label>Quantity:<input type="number" id="LPA" min ="0" value="0"/></label>
+        	<input id="submitButton3" type="submit" value="Add to Order" onclick="calcLuffy()" /> <br />
 			<details>
 				<summary>SIZE</summary>
 				<input type="radio" id="LuffyPaleAle_Can" name="LuffyPaleAleRadio" value="can" checked>
-	  			<label for="LuffyPaleAle_Can">16oz CAN</label><br/>
+	  			<label for="LuffyPaleAle_Can">16oz CAN ($4.50)</label><br/>
 				<input type="radio" id="LuffyPaleAle_SixPack" name="LuffyPaleAleRadio" value="six_pack">
-	  			<label for="LuffyPaleAle_SixPack">SIX PACK</label><br/>
+	  			<label for="LuffyPaleAle_SixPack">SIX PACK ($24.75)</label><br/>
 			</details><br/><br/>
 		
-	    <img src="NamiS&SPilsner.png" class="beerImg" alt="Nami S&S Pilsner can" />
-	      	<h3 class="food-item-title">NAMI S&S PILSNER</h3>
+	    <img src="NamiS&SPilsner.jpeg" class="beerImg" alt="Nami S&S Pilsner can" />
+	      	<h3 class="food-item-title">NAMI S&S PILSNER 4% ABV</h3>
         	<h6 class="food-item-description">
 				AROMATIC AND FLAVORFUL, NAMI S&S PILSNER GIVES CLEAN MALT NOTES IN THIS HOPPY DRINK
         	</h6>
-        	<label>Quantity:<input type="number" min ="0" value="0"/></label>
-        	<input id="submitButton4" type="submit" value="Add to Order" /> <br />
+        	<label>Quantity:<input type="number" id="NSS" min ="0" value="0"/></label>
+        	<input id="submitButton4" type="submit" value="Add to Order" onclick="calcNami()" /> <br />
 			<details>
 				<summary>SIZE</summary>
 				<input type="radio" id="NamiS&SPilsner_Can" name="NamiS&SPilsnerRadio" value="can" checked>
-	  			<label for="NamiS&SPilsner_Can">16oz CAN</label><br/>
+	  			<label for="NamiS&SPilsner_Can">16oz CAN ($4.50)</label><br/>
 				<input type="radio" id="NamiS&SPilsner_SixPack" name="NamiS&SPilsnerRadio" value="six_pack">
-	  			<label for="NamiS&SPilsner_SixPack">SIX PACK</label><br/>
+	  			<label for="NamiS&SPilsner_SixPack">SIX PACK ($24.75)</label><br/>
 			</details><br/><br/>
 		
-	    <img src="RobinMexicanLager.png" class="beerImg" alt="Robin Mexican Lager can" />
-	      	<h3 class="food-item-title">ROBIN MEXICAN LAGER</h3>
+	    <img src="RobinMexicanLager.jpeg" class="beerImg" alt="Robin Mexican Lager can" />
+	      	<h3 class="food-item-title">ROBIN MEXICAN LAGER 5% ABV</h3>
         	<h6 class="food-item-description">
 				FIND YOU PARADISE ANYWHERE WITH A REFRESHING MEXICAN LAGER, TRY WITH A SQUEEZE OF LIME
         	</h6>
-        	<label>Quantity:<input type="number" min ="0" value="0"/></label>
-        	<input id="submitButton5" type="submit" value="Add to Order" /> <br />
+        	<label>Quantity:<input type="number" id="RML" min ="0" value="0"/></label>
+        	<input id="submitButton5" type="submit" value="Add to Order" onclick="calcRobin()" /> <br />
 			<details>
 				<summary>SIZE</summary>
 				<input type="radio" id="RobinMexicanLager_Can" name="RobinMexicanLagerRadio" value="can" checked>
-	  			<label for="RobinMexicanLager_Can">16oz CAN</label><br/>
+	  			<label for="RobinMexicanLager_Can">16oz CAN ($4.50)</label><br/>
 				<input type="radio" id="RobinMexicanLager_SixPack" name="RobinMexicanLagerRadio" value="six_pack">
-	  			<label for="RobinMexicanLager_SixPack">SIX PACK</label><br/>
+	  			<label for="RobinMexicanLager_SixPack">SIX PACK ($24.75)</label><br/>
 			</details><br/><br/>
 		
-	    <img src="SanjiPaleLager.png" class="beerImg" alt="Sanji Pale Lager can" />
-	      	<h3 class="food-item-title">SANJI PALE LAGER</h3>
+	    <img src="SanjiPaleLager.jpeg" class="beerImg" alt="Sanji Pale Lager can" />
+	      	<h3 class="food-item-title">SANJI PALE LAGER 5.5% ABV</h3>
         	<h6 class="food-item-description">
 				A DRY, LEAN, AND CRISP LAGER ATTRIBUTED TO A PERFECT BALANCE OF NOBEL HOPS 
         	</h6>
-        	<label>Quantity:<input type="number" min ="0" value="0"/></label>
-        	<input id="submitButton6" type="submit" value="Add to Order" /> <br />
+        	<label>Quantity:<input type="number" id="SPL" min ="0" value="0"/></label>
+        	<input id="submitButton6" type="submit" value="Add to Order" onclick="calcSanji()" /> <br />
 			<details>
 				<summary>SIZE</summary>
 				<input type="radio" id="SanjiPaleLager_Can" name="SanjiPaleLagerRadio" value="can" checked>
-	  			<label for="SanjiPaleLager_Can">16oz CAN</label><br/>
+	  			<label for="SanjiPaleLager_Can">16oz CAN ($4.50)</label><br/>
 				<input type="radio" id="SanjiPaleLager_SixPack" name="SanjiPaleLagerRadio" value="six_pack">
-	  			<label for="SanjiPaleLager_SixPack">SIX PACK</label><br/>
+	  			<label for="SanjiPaleLager_SixPack">SIX PACK ($24.75)</label><br/>
 			</details><br/><br/>
 		
-	    <img src="TonyChopperIPA.png" class="beerImg" alt="Tony Chopper IPA can" />
-			<h3 class="food-item-title">TONY CHOPPER IPA</h3>
+	    <img src="TonyChopperIPA.jpeg" class="beerImg" alt="Tony Chopper IPA can" />
+			<h3 class="food-item-title">TONY CHOPPER IPA 6.5% ABV</h3>
         	<h6 class="food-item-description">
 				A FAN FAVORITE, THIS BITTER AND HOPPY IPA IS FOR GOOD TIMES WITH GREAT FRIENDS
         	</h6>
-        	<label>Quantity:<input type="number" min ="0" value="0"/></label>
-        	<input id="submitButton7" type="submit" value="Add to Order" /> <br />
+        	<label>Quantity:<input type="number" id="TC" min ="0" value="0"/></label>
+        	<input id="submitButton7" type="submit" value="Add to Order" onclick="calcTony()" /> <br />
 			<details>
 				<summary>SIZE</summary>
 				<input type="radio" id="TonyChopperIPA_Can" name="TonyChopperIPARadio" value="can" checked>
-	  			<label for="TonyChopperIPA_Can">16oz CAN</label><br/>
+	  			<label for="TonyChopperIPA_Can">16oz CAN ($4.50)</label><br/>
 				<input type="radio" id="TonyChopperIPA_SixPack" name="TonyChopperIPARadio" value="six_pack">
-	  			<label for="TonyChopperIPA_SixPack">SIX PACK</label><br/>
+	  			<label for="TonyChopperIPA_SixPack">SIX PACK ($24.75)</label><br/>
 			</details><br/><br/>
 		
-	    <img src="UsoppStout.png" class="beerImg" alt="Usopp Stout can" />
-	      	<h3 class="food-item-title">USOPP STOUT</h3>
+	    <img src="UsoppStout.jpeg" class="beerImg" alt="Usopp Stout can" />
+	      	<h3 class="food-item-title">USOPP STOUT 8% ABV</h3>
         	<h6 class="food-item-description">
 				DARK IN COLOR, OUR STOUT CARRIES HINTS OF COFFEE AND MOLASSES WITH A SMOOTH FINISH
         	</h6>
-        	<label>Quantity:<input type="number" min ="0" value="0"/></label>
-        	<input id="submitButton8" type="submit" value="Add to Order" /> <br />
+        	<label>Quantity:<input type="number" id="US" min ="0" value="0"/></label>
+        	<input id="submitButton8" type="submit" value="Add to Order" onclick="calcUssop()" /> <br />
 			<details>
 				<summary>SIZE</summary>
 				<input type="radio" id="UsoppStout_Can" name="UsoppStoutRadio" value="UsoppStout" checked>
-	  			<label for="UsoppStout_Can">16oz CAN</label><br/>
+	  			<label for="UsoppStout_Can">16oz CAN ($4.50)</label><br/>
 				<input type="radio" id="UsoppStout_SixPack" name="UsoppStoutRadio" value="UsoppStout">
-	  			<label for="UsoppStout_SixPack">SIX PACK</label><br/>
+	  			<label for="UsoppStout_SixPack">SIX PACK ($24.75)</label><br/>
 			</details><br/><br/>
 		
-	    <img src="ZoroDoubleIPA.png" class="beerImg" alt="Zoro Double IPA can" />
-	      	<h3 class="food-item-title">ZORO DOUBLE IPA</h3>
+	    <img src="ZoroDoubleIPA.jpeg" class="beerImg" alt="Zoro Double IPA can" />
+	      	<h3 class="food-item-title">ZORO DOUBLE IPA 8% ABV</h3>
         	<h6 class="food-item-description">
 				OUR BOLDEST AND DELIGHTFULLY BITTER COMPLEX DOUBLE IPA WITH A HIGH ABV
         	</h6>
-        	<label>Quantity:<input type="number" min ="0" value="0"/></label>
-        	<input id="submitButton9" type="submit" value="Add to Order" /> <br />
+        	<label>Quantity:<input type="number" id="ZD" min ="0" value="0"/></label>
+        	<input id="submitButton9" type="submit" value="Add to Order" onclick="calcZoro()" /> <br />
 			<details>
 				<summary>SIZE</summary>
 				<input type="radio" id="ZoroDoubleIPA_Can" name="ZoroDoubleIPARadio" value="ZoroDoubleIPA" checked>
-	  			<label for="ZoroDoubleIPA_Can">16oz CAN</label><br/>
+	  			<label for="ZoroDoubleIPA_Can">16oz CAN ($4.50)</label><br/>
 				<input type="radio" id="ZoroDoubleIPA_SixPack" name="ZoroDoubleIPARadio" value="ZoroDoubleIPA">
-	  			<label for="ZoroDoubleIPA_SixPack">SIX PACK</label><br/>
+	  			<label for="ZoroDoubleIPA_SixPack">SIX PACK ($24.75)</label><br/>
 			</details><br/><br/>
 		<center/>
 	</form>
@@ -183,5 +182,6 @@
 		        <br>Powered by Awesomeness
 		    </p>
 	    </footer>
+		<script src="beer_dashboard.js"></script>
 	</body>
 </html>
