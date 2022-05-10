@@ -1,126 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <html lang="en">
+<html lang="en">
 <title>One Piece Brewery</title>
-  <meta charset="utf-8">
+<meta charset="utf-8">
   
 <link rel="main menu dahsboard stylesheet" href="mainpage.css">
-  <script type = "javascript" src = "script.js" >
-		</script>
+<script type = "javascript" src = "script.js" ></script>
 </head>
-<body>
+	<body>
+		<div class="header">
+      <img id="banner" src="WebsiteLogo.jpeg" alt="Monkey D. Luffy" width="1300" height="100">
+    </div>
 
-<h2>One Piece Brewery</h2>
-<ul>
-      <li id="nav"><a href="main_menu_dashboard.html">Main Menu</a></li>
-      <li id="nav"><a href="beer_dashboard.html">Beer</a></li>
-      <li id="nav"><a href="food_dashboard.html">Food</a></li>
-      <li id="nav"><a href="contact_dashboard.html">Contact</a></li>
-      <li id="nav"><a href="about_dashboard.html">About Us</a></li>
-      <li><a href="sso.html">Login</a></li>
-</ul>
+    <div id="menu-outer">
+      <div class="table">
+        <ul id="horizontal-list">
+          <li id="nav"><a href="main_menu_dashboard.html">Main Menu</a></li>
+          <li id="nav"><a href="beer_dashboard.html">Beer</a></li>
+          <li id="nav"><a href="food_dashboard.html">Food</a></li>
+          <li id="nav"><a href="contact_dashboard.html">Contact</a></li>
+          <li id="nav"><a href="about_dashboard.html">About Us</a></li>
+          <li><a href="sso.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
 
-<h2>SHOP</h2>
-<h3> Click add to put item in cart</h3>
-  <div>
-  
-<form action="" style="height: 400px; width: 400px; margin: auto; background:#778899; ">
-  
-	<ul style="align:center; margin: 80px 80px 80px 80px;"> 
+	<h1>SHOP</h1>
+	<h3> Click add to put item in cart</h3>
+	  <div>
+	  	<form action="" style="height: 400px; width: 400px; margin: auto; background:#778899; ">
+	  		<ul style="align:center; margin: 80px 80px 80px 80px;"> 
 
-    <li style="font-size:30px;"> ITEMS</li>
-    <br /><br />
-		<li > 	<label>Coozie ($8.89):</label>
-			<input style="width: 50px;" type="number" id="cz" placeholder="Qty" onchange=addItem() /></li>
-			
-			<br />
-			
-		<li > 	<label>Mug($12.69):</label>
-			<input style="width: 50px;" type="number" id="mug" placeholder="Qty" onchange=addItem() /></li>
-			
-			<br />
-			
-			<li> 	<label>Hoodie($35.49):</label>
-			<input style="width: 50px;" type="number" id="hd" placeholder="Qty" onchange=addItem() /></li>
-			
-			<br />
+		    	<li style="font-size:30px;"> ITEMS</li>
+			    <br/><br/>
+					<li > 	<label>Coozie ($8.89):</label>
+						<input style="width: 50px;" type="number" id="cz" placeholder="Qty" onchange=addItem()/></li><br/>
+						
+					<li><label>Mug($12.69):</label>
+						<input style="width: 50px;" type="number" id="mug" placeholder="Qty" onchange=addItem()/></li><br/>
+						
+						<li><label>Hoodie($35.49):</label>
+						<input style="width: 50px;" type="number" id="hd" placeholder="Qty" onchange=addItem()/></li><br/>
 
-  			<li> 	<label>T-Shirt($25.49):</label>
-			<input style="width: 50px;" type="number" id="ts" placeholder="Qty" onchange=addItem() /></li>
-			
-			<br />
-			
-			<li> 	<label>Hat($25.49):</label>
-			<input style="width: 50px;" type="number" id="hat" placeholder="Qty" onchange=addItem() /></li>
-			
+			  		<li><label>T-Shirt($25.49):</label>
+						<input style="width: 50px;" type="number" id="ts" placeholder="Qty" onchange=addItem()/></li><br/>
+						
+						<li><label>Hat($25.49):</label>
+						<input style="width: 50px;" type="number" id="hat" placeholder="Qty" onchange=addItem()/></li>
+				</ul>
+	  
+	  <input style="margin: 0px 150px 0px 150px; height: 50px; width: 120px; font-size: 16px; " type="submit" id = "calc" value = "Cart Checkout" onclick=calculateTotal()/>
 
+	  <script>    
+			function calculateTotal(){
+		
+		  	var qtyCz = document.getElementById("cz").value;
+		  	var qtyMug = document.getElementById("mug").value; 
+		  	var qtyHd = document.getElementById("hd").value; 
+		    var qtyTs = document.getElementById("ts").value;
+		    var qtyHat = document.getElementById("hat").value; 
+		  
+				var taxRate = .0775;
+				var priceCz = 8.89;
+				var priceMug = 12.69;
+				var priceHd = 35.49;
+		  	var priceTs = 25.49;
+		  	var priceHat = 25.49;
+		  
+				var total = (qtyCz*priceCz) + (qtyMug*priceMug) + (qtyHd*priceHd) + (qtyTs*priceTs) + (qtyHat*priceHat);
+					total += (total * taxRate);
+					total = Math.round(total * 100) / 100;
+		  
+				alert("Cart Checkout Summary:\n\n" + 
+		        "Coozie (qty): " + qtyCz + "\n" +
+		        "Mug (qty): " + qtyMug + "\n" +
+		        "Hoodie (qty): " + qtyHd + "\n" +
+		        "T-Shirt (qty): " + qtyTs + "\n" +
+		        "Hat (qty): " + qtyHat + "\n" +
+		        
+		        "\n\nYour Total cost with tax is $"+ total + "\n\n" + "thank you for shopping with One Piece Brewery\n\n" ); 
+							return false;
+				}
 
-	</ul>
-  
-  <input style="margin: 0px 150px 0px 150px; height: 50px; width: 120px; font-size: 16px; " type="submit" id = "calc" value = "Cart Checkout" onclick=calculateTotal() />
+			function addItem(){
+				alert("item(s) added/removed in cart");
+				return false;
+			}
+		</script>
+	  </form>
 
-  <script>    
-		function calculateTotal(){
-	
-  	var qtyCz = document.getElementById("cz").value;
-  	var qtyMug = document.getElementById("mug").value; 
-  	var qtyHd = document.getElementById("hd").value; 
-    var qtyTs = document.getElementById("ts").value;
-    var qtyHat = document.getElementById("hat").value; 
-  
-		var taxRate = .0775;
-		var priceCz = 8.89;
-		var priceMug = 12.69;
-		var priceHd = 35.49;
-  	var priceTs = 25.49;
-  	var priceHat = 25.49;
+	    <footer>
+	    	<img class="image1" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
+	      <img class="image2" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
 
-  
-  
-		var total = (qtyCz*priceCz) + (qtyMug*priceMug) + (qtyHd*priceHd) + (qtyTs*priceTs) + (qtyHat*priceHat);
-			total += (total * taxRate);
-			total = Math.round(total * 100) / 100;
-  
-   
-	
-	
-		alert("Cart Checkout Summary:\n\n" + 
-        "Coozie (qty): " + qtyCz + "\n" +
-        "Mug (qty): " + qtyMug + "\n" +
-        "Hoodie (qty): " + qtyHd + "\n" +
-        "T-Shirt (qty): " + qtyTs + "\n" +
-        "Hat (qty): " + qtyHat + "\n" +
-        
-        "\n\nYour Total cost with tax is $"+ total + "\n\n" + "thank you for shopping with One Piece Brewery\n\n" ); 
-					return false;
-	}
+	      <p class="lightblue">
+	        One Piece Brewery<br>
+	        333 S Twin Oaks Valley Rd,<br>
+	        San Marcos, CA 92096<br>
+	        Tel: 760-867-5309<br><br>
 
-	function addItem(){
-		alert("item(s) added/removed in cart");
-	return false;
-}
-</script>
-    </form>
+	        <strong>Hours of Operaton:</strong><br>
+	        Sunday - Thursday : 11am-9pm<br>
+	        Friday & Saturday: 11am-11pm<br><br>
 
-    <footer>
-    	<img class="image1" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
-      <img class="image2" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
-
-      <p class="lightblue">
-        One Piece Brewery<br>
-        333 S Twin Oaks Valley Rd,<br>
-        San Marcos, CA 92096<br>
-        Tel: 760-867-5309<br><br>
-
-        <strong>Hours of Operaton:</strong><br>
-        Sunday - Thursday : 11am-9pm<br>
-        Friday & Saturday: 11am-11pm<br><br>
-
-        Copyright ©2022 by One Piece Brewery - All Rights Reserved
-        <br>Powered by Awesomeness
-      </p>
-    </footer>
-    
-</body>
+	        Copyright ©2022 by One Piece Brewery - All Rights Reserved
+	        <br>Powered by Awesomeness
+	      </p>
+	    </footer>
+	</body>
 </html>
