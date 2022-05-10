@@ -1,4 +1,4 @@
-<?php 
+< ?php 
 		$db = mysqli_connect("localhost", "group_4", "group_4");
 		
 		if (mysqli_connect_errno()) {
