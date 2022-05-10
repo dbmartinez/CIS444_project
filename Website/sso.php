@@ -1,5 +1,3 @@
-
-  
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,8 +27,10 @@
     </div>
   
 <h1>Sign In</h1>
-<form style="margin:auto; width:500px; background:transparent;" action="sso.php" method="post">
-<?php 
+
+<? php 
+
+		// connect to MYSQL
 		$db = mysqli_connect("localhost", "group_4", "group_4");
 		
 		if (mysqli_connect_errno()) {
@@ -59,7 +59,7 @@
 		
 		mysqli_close("localhost", "group_4", "group_4");
 	?>
-</form>
+
   <footer>
     <img class="image1" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
     <img class="image2" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
