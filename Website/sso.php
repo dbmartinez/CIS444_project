@@ -53,7 +53,7 @@
 			 exit;
 		}
     else{
-      print "Login was successful!"
+      print "<p>Login was successful!</p>"
       exit;
     }
 		
