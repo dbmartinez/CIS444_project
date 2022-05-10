@@ -1,32 +1,4 @@
-<?php 
-		$db = mysqli_connect("localhost", "group_4", "group_4");
-		
-		if (mysqli_connect_errno()) {
-			print "DB Connection failed: " . mysqli_connect_error();
-			exit();
-			}
-		
-		mysqli_select_db("group_4");
-		
-		$email = $_POST["un"];
-    $password = $_POST["pwd"];
-		
-		$query = "SELECT * FROM group4.contact WHERE $email = Email AND $password = password";
-		
-		$result = mysqli_query($db,$query);
-		
-		if (!$result) {
-			 print "Error - incorrect Username/Password. If new user go back and click create account or login as guest" .
-			 mysqli_error();
-			 exit;
-		}
-    else{
-      print "Login was successful!"
-      exit;
-    }
-		
-		mysqli_close("localhost", "group_4", "group_4");
-	?>
+
   
 <!DOCTYPE html>
 <html>
@@ -58,22 +30,35 @@
   
 <h1>Sign In</h1>
 <form style="margin:auto; width:500px; background:transparent;" action="sso.php" method="post">
-
-  <label> Email</label>
-      <input type="text" style="float:center;" id="un" placeholder="(example@gmail.com)" onchange=checkUsername() />
-      
-      <br />
-      
-      <label>Password</label>
-      <input type="text" style="float:center;" id="pwd" placeholder="(password)" onchange=checkPassword() />
-      
-      <br />
-<button type="submit" id="cart_button" >sign in</button>
-  <br />
-    <button style=" float:center; width:150; height:70; padding:20px; margin: 50px 200px 0px 0px;" ><a href="create_acct.html">create account</a> </button>
-  <br />
-  <button style="float:center; width:150; height:70; padding:20px; margin: 50px 200px 0px 0px;" ><a href="checkout.html">continue checkout as guest</a> </button>
-
+<?php 
+		$db = mysqli_connect("localhost", "group_4", "group_4");
+		
+		if (mysqli_connect_errno()) {
+			print "DB Connection failed: " . mysqli_connect_error();
+			exit();
+			}
+		
+		mysqli_select_db("group_4");
+		
+		$email = $_POST["un"];
+    $password = $_POST["pwd"];
+		
+		$query = "SELECT * FROM group4.contact WHERE $email = Email AND $password = password";
+		
+		$result = mysqli_query($db,$query);
+		
+		if (!$result) {
+			 print "Error - incorrect Username/Password. If new user go back and click create account or login as guest" .
+			 mysqli_error();
+			 exit;
+		}
+    else{
+      print "Login was successful!"
+      exit;
+    }
+		
+		mysqli_close("localhost", "group_4", "group_4");
+	?>
 </form>
   <footer>
     <img class="image1" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
