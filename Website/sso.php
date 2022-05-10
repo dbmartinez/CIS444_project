@@ -25,6 +25,6 @@
       exit;
     }
 		
-		mysqli_close("localhost", "riche014", "riche014");
+		mysqli_close("localhost", "group_4", "group_4");
 	?>
   
