@@ -4,25 +4,29 @@
 <title>One Piece Brewery</title>
 <meta charset = "utf-8">
 <link rel="contact dashboard stylesheet" href="mainpage.css">
- <script src="contact_dashboard.js"> </script>
-
 </head>
-  <body>
-    <header>
-      <img class="image" src="WebsiteLogo.jpeg" alt="Monkey D. Luffy" width="1300" height="600">
-    </header>
+<script src="contact_dashboard.js"> </script>
 
-    <ul>
-      <li><a href="main_menu_dashboard.html">Main Menu</a></li>
-      <li><a href="beer_dashboard.html">Beer</a></li>
-      <li><a href="food_dashboard.html">Food</a></li>
-      <li><a href="shop_dashboard.html">Shop</a></li>
-      <li><a href="about_dashboard.html">About Us</a></li>
-      <li><a href="sso.html">Login</a></li>
-    </ul>
+  <body>
+    <div class="header">
+      <img id="banner" src="WebsiteLogo.jpeg" alt="Monkey D. Luffy" width="1300" height="100">
+    </div>
+
+    <div id="menu-outer">
+      <div class="table">
+        <ul id="horizontal-list">
+          <li><a href="main_menu_dashboard.html">Main Menu</a></li>
+          <li><a href="beer_dashboard.html">Beer</a></li>
+          <li><a href="food_dashboard.html">Food</a></li>
+          <li><a href="shop_dashboard.html">Shop</a></li>
+          <li><a href="about_dashboard.html">About Us</a></li>
+          <li><a href="sso.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
 
     <h1>CONTACT US</h1>
-    <form action="contact.php" method="post">
+    <form action="contact_dashboard.php" method="post">
       <p>
         FIND US HERE
         <br>Address: 333 S Twin Oaks Valley Rd, 
@@ -53,32 +57,32 @@
       <center>
         <label> 
           First Name:
-          <input type="text" style="width: 100px;" id="userFN" onchange = "userInput()"/>
+          <input type="text" style="width: 100px;" id="userFN" onchange = "FNuserInput()"/>
         </label>
 
         <label> 
           <br>
           Last Name:
-          <input type="text" style="width: 100px;" id="userLN" onchange = "userInput()"/>
+          <input type="text" style="width: 100px;" id="userLN" onchange = "LNuserInput()"/>
         </label>
 
         <label> 
           <br>
           Email:
-          <input type="text" style="width: 200px;" id="useremail" onchange = "userInput()"/>
+          <input type="text" style="width: 200px;" id="useremail" onchange = "EMuserInput()"/>
         </label>
 
         <label> 
           <br>
           Subject:
-          <input type="text" style="width: 200px;" id="usersubject" onchange = "userInput()"/>
+          <input type="text" style="width: 200px;" id="usersubject" onchange = "SuserInput()"/>
         </label>
 
         <label> 
           <br>
           Message:
           <br>
-          <input type="text" style="height: 100px;" id="usercomments" onchange = "userInput()"/>
+          <input type="text" style="height: 100px;" id="usercomments" onchange = "MuserInput()"/>
         </label>
 
         <label>
