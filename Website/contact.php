@@ -25,7 +25,7 @@
 			 exit;
 		}
     else{
-      print "Thank you for contacting One Piece Brewery!";
+      print "<p>Thank you for contacting One Piece Brewery!</p>";
       exit;
     }
 		
