@@ -3,25 +3,25 @@
 <head>
   <html lang="en">
 <title>One Piece Brewery</title>
-<meta charset = "utf-8">
+  <meta charset="utf-8">
+  
 <link rel="main menu dahsboard stylesheet" href="mainpage.css">
-
+  <script type = "javascript" src = "script.js" >
+		</script>
+</head>
 <body>
 
-	<header>
-	  <img class="image" src="WebsiteLogo.jpeg" alt="Monkey D. Luffy" width="1300" height="100">
-	</header>
+<h2>One Piece Brewery</h2>
+<ul>
+      <li id="nav"><a href="main_menu_dashboard.html">Main Menu</a></li>
+      <li id="nav"><a href="beer_dashboard.html">Beer</a></li>
+      <li id="nav"><a href="food_dashboard.html">Food</a></li>
+      <li id="nav"><a href="contact_dashboard.html">Contact</a></li>
+      <li id="nav"><a href="about_dashboard.html">About Us</a></li>
+      <li><a href="sso.html">Login</a></li>
+</ul>
 
-	<ul>
-    <li id="nav"><a href="main_menu_dashboard.html">Main Menu</a></li>
-    <li id="nav"><a href="beer_dashboard.html">Beer</a></li>
-    <li id="nav"><a href="food_dashboard.html">Food</a></li>
-    <li id="nav"><a href="contact_dashboard.html">Contact</a></li>
-    <li id="nav"><a href="about_dashboard.html">About Us</a></li>
-    <li><a href="sso.html">Login</a></li>
-	</ul>
-
-	<h2>SHOP</h2>
+<h2>SHOP</h2>
 <h3> Click add to put item in cart</h3>
   <div>
   
@@ -50,7 +50,7 @@
 			<input style="width: 50px;" type="number" id="ts" placeholder="Qty" onchange=addItem() /></li>
 			
 			<br />
-		
+			
 			<li> 	<label>Hat($25.49):</label>
 			<input style="width: 50px;" type="number" id="hat" placeholder="Qty" onchange=addItem() /></li>
 			
@@ -59,10 +59,9 @@
 	</ul>
   
   <input style="margin: 0px 150px 0px 150px; height: 50px; width: 120px; font-size: 16px; " type="submit" id = "calc" value = "Cart Checkout" onclick=calculateTotal() />
-  
-  <script>
-	  
-	  function calculateTotal(){
+
+  <script>    
+		function calculateTotal(){
 	
   	var qtyCz = document.getElementById("cz").value;
   	var qtyMug = document.getElementById("mug").value; 
@@ -70,19 +69,23 @@
     var qtyTs = document.getElementById("ts").value;
     var qtyHat = document.getElementById("hat").value; 
   
-	var taxRate = .0775;
-	var priceCz = 8.89;
-	var priceMug = 12.69;
-	var priceHd = 35.49;
-  var priceTs = 25.49;
-  var priceHat = 25.49;
+		var taxRate = .0775;
+		var priceCz = 8.89;
+		var priceMug = 12.69;
+		var priceHd = 35.49;
+  	var priceTs = 25.49;
+  	var priceHat = 25.49;
 
   
   
-	var total = (qtyCz*priceCz) + (qtyMug*priceMug) + (qtyHd*priceHd) + (qtyTs*priceTs) + (qtyHat*priceHat);
-		total += (total * taxRate);
-		total = Math.round(total * 100) / 100;
-  alert("Cart Checkout Summary:\n\n" + 
+		var total = (qtyCz*priceCz) + (qtyMug*priceMug) + (qtyHd*priceHd) + (qtyTs*priceTs) + (qtyHat*priceHat);
+			total += (total * taxRate);
+			total = Math.round(total * 100) / 100;
+  
+   
+	
+	
+		alert("Cart Checkout Summary:\n\n" + 
         "Coozie (qty): " + qtyCz + "\n" +
         "Mug (qty): " + qtyMug + "\n" +
         "Hoodie (qty): " + qtyHd + "\n" +
@@ -90,17 +93,16 @@
         "Hat (qty): " + qtyHat + "\n" +
         
         "\n\nYour Total cost with tax is $"+ total + "\n\n" + "thank you for shopping with One Piece Brewery\n\n" ); 
-	return false;
-}
+					return false;
+	}
 
-function addItem(){
+	function addItem(){
 		alert("item(s) added/removed in cart");
 	return false;
 }
-	  
-	  </script>
+</script>
 
-		<footer>
+<footer>
     	<img class="image1" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
       <img class="image2" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
 
@@ -118,5 +120,6 @@ function addItem(){
         <br>Powered by Awesomeness
       </p>
     </footer>
-	</body>
+    </form>
+</body>
 </html>
