@@ -10,6 +10,7 @@ CREATE TABLE user (
     uid int(8) PRIMARY KEY,
     LastName varchar(255),
     FirstName varchar(255),
+    Email varchar(255),
     password varchar(255),
     Address varchar(255),
     creditcardnum int(30),
