@@ -1,5 +1,5 @@
 /* for all pages */
-body {/*
+body {
   background-color: black;
   min-height: 400px;
   background-image: url("RestaurantPhoto.jpg");
@@ -7,14 +7,7 @@ body {/*
   /*background-image: url("RestaurantPhoto3.jpg");*/
   background-size: cover;
   background-attachment: scroll;
-  background-blend-mode: lighten;*/
-
-  background-image: url("RestaurantPhoto.jpg");
-  min-height: 400px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-blend-mode: lighten;
 }
 
 .header-links{
