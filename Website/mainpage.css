@@ -282,14 +282,16 @@ input[type=radio] {
 }
 
 input[type=submit] {
-  background-color: #00b2ee;
-  width: 100%;
-  color: #DAA520;
-  padding: 15px;
-  margin: 10px 0px;
-  border: none;
-  cursor: pointer;
-  font: bold 15px arial;
+  background: #f28207;
+  color: black;
+  border-style: outset;
+  border-color: #613505;
+  height: 24px;
+  width: 100px;
+  font: bold 12px arial, sans-serif;
+  text-shadow: none;
+  position: relative;
+  top: 0.5px;
 }
 
 details {
