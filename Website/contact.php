@@ -46,7 +46,7 @@
             width="400" height="300" style="border: 10px;;" allowfullscreen="" loading="lazy"></iframe></center>
         </div>
 
-< ?php 
+<?php 
 		$db = mysqli_connect("localhost", "group_4", "group_4");
 		
 		if (mysqli_connect_errno()) {
