@@ -175,10 +175,10 @@ function calcTony() {
 	document.getElementById("TC").value = 0;
 }
 
-function calcUssop() {
+function calcUsopp() {
 	var qty = document.getElementById("US").value;
-	var radios = document.getElementsByName("UssopStoutRadio");
-	var beerName = "Ussop Stout"
+	var radios = document.getElementsByName("UsoppStoutRadio");
+	var beerName = "Usopp Stout"
 	
 	if (radios[0].checked) {
 		var total = qty * canPrice * taxRate;
