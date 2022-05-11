@@ -145,6 +145,7 @@ html {
 }
 
 footer {
+  background-image: linear-gradient(black, black, black, #242526);
   text-align: center;
   padding: 10px;
   background-color: black;
