@@ -4,8 +4,8 @@
 <title>One Piece Brewery</title>
 <meta charset = "utf-8">
 <link rel="contact dashboard stylesheet" href="mainpage.css">
+  <script src="contact_dashboard.js"> </script>
 </head>
-<script src="contact_dashboard.js"> </script>
 
   <body>
     <div class="header">
@@ -26,71 +26,71 @@
     </div>
 
     <h1>CONTACT US</h1>
-    <form action="contact_dashboard.php" method="post">
-      <p>
-        FIND US HERE
-        <br>Address: 333 S Twin Oaks Valley Rd, 
-        <br>San Marcos, CA 92096
-        <br>Phone: 760-867-5309
-        <br><br>Hours of Operation:
-        <br>
-          Sunday - Thursday: 11am-9pm
-          <br>
-          Friday & Saturday: 11am-11pm
-        </p>
+    <form style="margin:auto; width:500px; background: transparent;" action="contact_dashboard.php" method="post">
+     <p>
+       FIND US HERE
+       <br>Address: 333 S Twin Oaks Valley Rd, 
+       <br>San Marcos, CA 92096
+       <br>Phone: 760-867-5309
+       <br><br>Hours of Operation:
+       <br>
+         Sunday - Thursday: 11am-9pm
+         <br>
+         Friday & Saturday: 11am-11pm
+       </p>
 
-        <div>
-          <center>
-          <iframe id="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3341.130519506854!2d-117.16192368484039!3d33.131935473110886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf54d308252e7%3A0x84239e8d14da35df!2sCSUSM%20Clarke%20Field%20House!5e0!3m2!1sen!2sus!4v1647497500601!5m2!1sen!2sus"
-            width="400" height="300" style="border: 10px;;" allowfullscreen="" loading="lazy"></iframe></center>
-        </div>
+       <div>
+         <center>
+         <iframe id="map"
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3341.130519506854!2d-117.16192368484039!3d33.131935473110886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf54d308252e7%3A0x84239e8d14da35df!2sCSUSM%20Clarke%20Field%20House!5e0!3m2!1sen!2sus!4v1647497500601!5m2!1sen!2sus"
+           width="400" height="300" style="border: 10px;;" allowfullscreen="" loading="lazy"></iframe></center>
+       </div>
 
-      <p>
-        <strong><br>SEND US A MESSAGE<br/></strong>
-        IF YOU HAVE ANY QUESTIONS OR
-        <br>WANT TO DISCUSS BUSINESS OPPORTUNITIES,
-        <br>
-        PLEASE LEAVE US A MESSAGE.
-      </p>
-      
-      <center>
-        <label> 
-          First Name:
-          <input type="text" style="width: 100px;" id="userFN" onchange = "FNuserInput()"/>
-        </label>
+     <p>
+       <strong><br>SEND US A MESSAGE<br/></strong>
+       IF YOU HAVE ANY QUESTIONS OR
+       <br>WANT TO DISCUSS BUSINESS OPPORTUNITIES,
+       <br>
+       PLEASE LEAVE US A MESSAGE.
+     </p>
 
-        <label> 
-          <br>
-          Last Name:
-          <input type="text" style="width: 100px;" id="userLN" onchange = "LNuserInput()"/>
-        </label>
+       <div class="container">
+         <label>
+           First Name:
+           <input type="text" id="userFN" onchange="userInput()" />
+         </label>
 
-        <label> 
-          <br>
-          Email:
-          <input type="text" style="width: 200px;" id="useremail" onchange = "EMuserInput()"/>
-        </label>
+         <label>
+           <br>
+           Last Name:
+           <input type="text" id="userLN" onchange="userInput()" />
+         </label>
 
-        <label> 
-          <br>
-          Subject:
-          <input type="text" style="width: 200px;" id="usersubject" onchange = "SuserInput()"/>
-        </label>
+         <label>
+           <br>
+           Email:
+           <input type="text" id="useremail" onchange="userInput()" />
+         </label>
 
-        <label> 
-          <br>
-          Message:
-          <br>
-          <input type="text" style="height: 100px;" id="usercomments" onchange = "MuserInput()"/>
-        </label>
+         <label>
+           <br>
+           Subject:
+           <input type="text" id="usersubject" onchange="userInput()" />
+         </label>
 
-        <label>
-          <br>
-          <input type="submit" id="submitButton"/>
-        </label>
-      </center>
-    </form>
+         <label>
+           <br>
+           Message:
+           <br>
+           <input type="text" id="usercomments" onchange="userInput()" />
+         </label>
+
+         <label>
+           <br>
+           <input type="submit" id="submitButton" />
+         </label>
+       </div>
+   </form>
 
     <footer>
       <img class="image1" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
