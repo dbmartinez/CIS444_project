@@ -27,24 +27,17 @@
     </div>
   
 <h1>Sign In</h1>
-<form style="margin:auto; width:500px; background:transparent;" action="sso.php" method="post">
-
-  <label> Email</label>
-      <input type="text" style="float:center;" id="un" placeholder="(example@gmail.com)" onchange=checkUsername() />
-      
-      <br />
-      
-      <label>Password</label>
-      <input type="text" style="float:center;" id="pwd" placeholder="(password)" onchange=checkPassword() />
-      
-      <br />
-<button type="submit" id="cart_button" >sign in</button>
-  <br />
-    <button style=" float:center; width:150; height:70; padding:20px; margin: 50px 200px 0px 0px;" ><a href="create_acct.html">create account</a> </button>
-  <br />
-  <button style="float:center; width:150; height:70; padding:20px; margin: 50px 200px 0px 0px;" ><a href="checkout.html">continue checkout as guest</a> </button>
-
-</form>
+<form style="margin:auto; width:500px; background: transparent;" action="sso.php" method="post">
+            <div class="container">
+                <label> Email</label>
+                <input type="text" id="un" placeholder="(example@gmail.com)" onchange=checkUsername() />
+                <label>Password</label>
+                <input type="text" id="pwd" placeholder="(password)" onchange=checkPassword() />
+                <button><ahref="checkout.html">sign in</a> </button>
+                <button><ahref="create_acct.html">create account</a> </button>
+                <button><ahref="checkout.html">continue checkout as guest</a> </button>
+            </div>
+        </form>
   <footer>
     <img class="image1" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
     <img class="image2" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
