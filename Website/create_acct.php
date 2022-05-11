@@ -27,7 +27,7 @@
 
   <h1>Create Account</h1>
   
-  <? php 
+  <?php 
 
 		$db = mysqli_connect("localhost", "group_4", "group_4");
 		
