@@ -1,5 +1,5 @@
 /* for all pages */
-body {
+body {/*
   background-color: black;
   min-height: 400px;
   background-image: url("RestaurantPhoto.jpg");
@@ -7,7 +7,14 @@ body {
   /*background-image: url("RestaurantPhoto3.jpg");*/
   background-size: cover;
   background-attachment: scroll;
-  background-blend-mode: lighten;
+  background-blend-mode: lighten;*/
+
+  background-image: url("RestaurantPhoto.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header-links{
@@ -179,6 +186,7 @@ button {
    border: 2px solid #DAA520;
    box-sizing: border-box;
  }
+
 button:hover {
   opacity: 0.7;
 }
@@ -196,23 +204,6 @@ button:hover {
 }
 
 /* shop */
-#nav {
-  float: left;
-}
-
-#nav a {
-  display: block;
-  color: #DAA520;
-  text-align: center;
-  padding: 14px 16px;
-  width:auto;
-  font-family: 'Courier New', monospace;
-  margin:auto;
-  text-decoration: none;
-  font-weight: bold;
-  border:white;
-}
-
 #cart_button {
   float: right;
   margin: 0px 200px 0px 0px;
@@ -291,16 +282,14 @@ input[type=radio] {
 }
 
 input[type=submit] {
-    background: #f28207;
-    color: black;
-    border-style: outset;
-    border-color: #613505;
-    height: 24px;
-    width: 100px;
-    font: bold 12px arial, sans-serif;
-    text-shadow: none;
-    position: relative;
-    top: 0.5px;
+  background-color: #00b2ee;
+  width: 100%;
+  color: #DAA520;
+  padding: 15px;
+  margin: 10px 0px;
+  border: none;
+  cursor: pointer;
+  font: bold 15px arial;
 }
 
 details {
