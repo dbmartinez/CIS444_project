@@ -294,6 +294,19 @@ input[type=submit] {
   top: 0.5px;
 }
 
+input[type=button] {
+    background: #f28207;
+    color: black;
+    border-style: outset;
+    border-color: #613505;
+    height: 24px;
+    width: 100px;
+    font: bold 12px arial, sans-serif;
+    text-shadow: none;
+    position: relative;
+    top: 0.5px;
+}
+
 details {
     background: #9e8760;
     color: #444;
