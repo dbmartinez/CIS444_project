@@ -28,7 +28,7 @@
   
 <h1>Sign In</h1>
 
-<? php 
+<?php 
 
 		// connect to MYSQL
 		$db = mysqli_connect("localhost", "group_4", "group_4");
