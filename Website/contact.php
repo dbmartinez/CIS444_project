@@ -26,7 +26,7 @@
     </div>
 
     <h1>CONTACT US</h1>
-    <form action="contact_dashboard.php" method="post">
+   <form action = "">
       <p>
         FIND US HERE
         <br>Address: 333 S Twin Oaks Valley Rd, 
