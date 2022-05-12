@@ -26,7 +26,7 @@
     </div>
 
     <h1>CONTACT US</h1>
-   <form action = "">
+   
       <p>
         FIND US HERE
         <br>Address: 333 S Twin Oaks Valley Rd, 
@@ -79,7 +79,7 @@
 		
 		mysqli_close("localhost", "group_4", "group_4");
 	?>
-    </form>
+    
 
     <footer>
       <img class="image1" src="LuffyJollyRoger.jpeg" alt="Jolly Roger" width="150" height="150">
